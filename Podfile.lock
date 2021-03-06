@@ -1,0 +1,148 @@
+PODS:
+  - Action (4.3.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - Closures (0.7)
+  - Codextended (0.3.0)
+  - DataCompression (3.6.0)
+  - Differentiator (5.0.0)
+  - Kanna (5.2.4)
+  - lottie-ios (3.2.1)
+  - MarkdownView (1.7.1)
+  - "NSObject+Rx (5.2.0)":
+    - RxSwift (~> 6.0.0)
+  - ObjectMapper (3.5.3)
+  - Overture (0.5.0)
+  - PanModal (1.2.7)
+  - QuickLayout (3.0.0)
+  - ResilientDecoding (0.9.1)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - RxBiBinding (0.3.5):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.0.0):
+    - RxRelay (= 6.0.0)
+    - RxSwift (= 6.0.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxGesture (4.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxKeyboard (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
+  - RxSwiftExt (6.0.0):
+    - RxSwiftExt/Core (= 6.0.0)
+    - RxSwiftExt/RxCocoa (= 6.0.0)
+  - RxSwiftExt/Core (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwiftExt/RxCocoa (6.0.0):
+    - RxCocoa (= 6.0.0)
+    - RxSwiftExt/Core
+  - RxTheme (5.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - Storez/Core (3.0.1)
+  - Storez/UserDefaults (3.0.1):
+    - Storez/Core
+  - SwiftEntryKit (1.2.7):
+    - QuickLayout (= 3.0.0)
+  - SwiftIcons (3.0)
+
+DEPENDENCIES:
+  - Action (~> 4.3.0)
+  - Closures
+  - Codextended
+  - DataCompression
+  - Kanna (~> 5.2.2)
+  - lottie-ios
+  - MarkdownView
+  - "NSObject+Rx (~> 5.2.0)"
+  - ObjectMapper (~> 3.5)
+  - Overture (~> 0.5)
+  - PanModal
+  - ResilientDecoding (~> 0.9)
+  - Reusable
+  - RxBiBinding (~> 0.3.5)
+  - RxCocoa (~> 6.0)
+  - RxDataSources (~> 5.0)
+  - RxGesture (~> 4.0)
+  - RxKeyboard (~> 2.0)
+  - RxSwift (~> 6.0)
+  - RxSwiftExt (~> 6.0.0)
+  - RxTheme (~> 5.0)
+  - Storez/UserDefaults
+  - SwiftEntryKit (= 1.2.7)
+  - SwiftIcons (~> 3.0)
+
+SPEC REPOS:
+  trunk:
+    - Action
+    - Closures
+    - Codextended
+    - DataCompression
+    - Differentiator
+    - Kanna
+    - lottie-ios
+    - MarkdownView
+    - "NSObject+Rx"
+    - ObjectMapper
+    - Overture
+    - PanModal
+    - QuickLayout
+    - ResilientDecoding
+    - Reusable
+    - RxBiBinding
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxKeyboard
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - RxTheme
+    - Storez
+    - SwiftEntryKit
+    - SwiftIcons
+
+SPEC CHECKSUMS:
+  Action: 9891cd1b0a9047557d7e58e8dfae743e19d08197
+  Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
+  Codextended: f384271b8694376ad766ddbf2a011efbfdcee905
+  DataCompression: 06628f9c807b6f152e0da37635633f62fc51dc77
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Kanna: b9d00d7c11428308c7f95e1f1f84b8205f567a8f
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
+  MarkdownView: cf30a97ab39b2bce04406adce541972c882363bd
+  "NSObject+Rx": 488b91a66043cc47de9cd5de9264f2ae1e2fcb13
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Overture: 2e6252ead5da6d3347f758047f27a31cb469d59d
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  ResilientDecoding: 1f9b8a240f569c93c6960eb300cdda9340a15ef2
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  RxBiBinding: c4de0aad6ee668fa73ea6ba423bc0ab5d77b986b
+  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxGesture: b095a86df33d199a33b46a644e7c58bdef8ab035
+  RxKeyboard: 4f5863f43b4ff0cbb2a20b94688d6b80c8a43c14
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  RxSwiftExt: 6637802b67dd4b60c00c661cc640316b693c0387
+  RxTheme: 7ec18942dbf3bdf476d5f5b8f4db2ec1e1aab9b4
+  Storez: d2ee7bd3ac566bce64264379b4686f05f837da5e
+  SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
+  SwiftIcons: 3b748e57d9eee0c7c8d3bdbf2d742c0b1b4c6172
+
+PODFILE CHECKSUM: 40f78baf52b44d5091dd72d22e978428743813fe
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,6 @@
+framework module ResilientDecoding {
+  umbrella header "ResilientDecoding-umbrella.h"
+
+  export *
+  module * { export * }
+}

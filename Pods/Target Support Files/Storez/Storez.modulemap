@@ -1,0 +1,6 @@
+framework module Storez {
+  umbrella header "Storez-umbrella.h"
+
+  export *
+  module * { export * }
+}

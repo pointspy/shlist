@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="KGk-i7-Jjw" customClass="SwitchCell" customModule="Shlist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMC-Du-RK4">
+                        <rect key="frame" x="16" y="-4" width="288" height="52"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-bS-xN3">
+                                <rect key="frame" x="12" y="10.5" width="264" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сохранить в словаре" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSX-xd-nzA">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xyy-Nn-Iyg">
+                                        <rect key="frame" x="215" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.30980392159999998" green="0.52156862749999999" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3NX-bS-xN3" firstAttribute="centerY" secondItem="iMC-Du-RK4" secondAttribute="centerY" id="2G7-Ev-QRd"/>
+                            <constraint firstItem="3NX-bS-xN3" firstAttribute="leading" secondItem="iMC-Du-RK4" secondAttribute="leading" constant="12" id="Axx-2p-tkA"/>
+                            <constraint firstAttribute="height" constant="52" id="MWu-7D-MnP"/>
+                            <constraint firstAttribute="trailing" secondItem="3NX-bS-xN3" secondAttribute="trailing" constant="12" id="dzv-dg-Brg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iMC-Du-RK4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2AB-l8-1LU"/>
+                    <constraint firstAttribute="trailing" secondItem="iMC-Du-RK4" secondAttribute="trailing" constant="16" id="FRI-zz-WH6"/>
+                    <constraint firstItem="iMC-Du-RK4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q22-ly-8Rk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="iMC-Du-RK4" id="jNg-xT-Ybo"/>
+                <outlet property="nameLabel" destination="QSX-xd-nzA" id="rrN-YL-SbG"/>
+                <outlet property="stackView" destination="3NX-bS-xN3" id="pcS-XL-gIj"/>
+                <outlet property="switchControl" destination="xyy-Nn-Iyg" id="WrR-IT-9ZU"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="128"/>
+        </tableViewCell>
+    </objects>
+</document>
