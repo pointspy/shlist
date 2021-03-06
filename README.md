@@ -2,6 +2,16 @@
 
 Simple and user-friendly application for doing the shopping list.
 
+/images/shlist1.png
+
+/images/shlist2.png
+
+/images/shlist3.png
+
+/images/shlist4.png
+
+/images/shlist5.png
+
 ## License
 
 MIT License
