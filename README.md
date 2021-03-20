@@ -5,10 +5,12 @@
 
 Simple and user-friendly application for doing the shopping list.
 
+| Light                      | _                          | 
+| -------------------------- | -------------------------- |
+| ![](/images/image1.png)  | ![](/images/image2.png)  | 
 | Dark                      | _                          | 
 | -------------------------- | -------------------------- |
-| ![](/images/shlist1.png)  | ![](/images/shlist3.png)  | 
-| ![](/images/shlist2.png)  | ![](/images/shlist4.png)  | 
+| ![](/images/image3.png)  | ![](/images/image4.png)  | 
 
 
 ## License
