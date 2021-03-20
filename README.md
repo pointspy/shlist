@@ -14,6 +14,15 @@ Simple and user-friendly application for doing the shopping list.
 | ![](/images/image3.png)  | ![](/images/image4.png)  | 
 
 
+## Features
+
+- intuitive interface
+- ability to import/export the list
+- convenient addition of a new product to the shopping list
+- filled database of popular products
+- ability to add/remove your own products
+- for the product, you can specify the price and quantity to calculate the total amount
+
 ## License
 
 MIT License
