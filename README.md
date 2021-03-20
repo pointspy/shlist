@@ -1,7 +1,7 @@
 # Shlist
 
 ![Swift](https://img.shields.io/badge/swift-5.3-orange.svg?style=for-the-badge)
-[![license](https://img.shields.io/github/license/sgr-ksmt/FireTodo.svg?style=for-the-badge)](https://github.com/sgr-ksmt/FireTodo/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/pointspy/shlist?style=for-the-badge)](https://github.com/pointspy/shlist/blob/master/LICENSE)
 
 Simple and user-friendly application for doing the shopping list.
 
