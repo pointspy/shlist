@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Cake 🎂</string>
+    <string>Chocolate 🍫</string>
+    <string>Candy 🍬</string>
+    <string>Ice cream🍦</string>
+    <string>Honey 🍯</string>
+    <string>Cake 🍮</string>
+    <string>Cookies 🍪</string>
+    <string>Cupcake 🥮</string>
+    <string>Marmalade</string>
+    <string>Marshmallow</string>
+    <string>Iris</string>
+    <string>Caramel</string>
+    <string>Chocolate cake</string>
+    <string>Cracker</string>
+    <string>Oatmeal cookies</string>
+    <string>Halva</string>
+    <string>Aspartame</string>
+    <string>Sugar</string>
+    <string>Brown sugar</string>
+    <string>Saccharin</string>
+    <string>Stevia (sweetener)</string>
+    <string>Fructose</string>
+    <string>Dark chocolate (70-85% cocoa)</string>
+    <string>Chocolate bar</string>
+</array>
+</plist>

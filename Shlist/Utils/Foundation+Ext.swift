@@ -9,23 +9,31 @@
 import Foundation
 
 public protocol IntTransformable {
-    var asInt: Int {get}
+    var asInt: Int { get }
 }
 
-extension Int {
+public protocol DoubleTransformable {
+    var asDouble: Double { get }
+}
+
+public extension Int {
     var asDouble: Double {
         return Double(self)
     }
 }
 
-extension Double {
-    public var asInt: Int {
+public extension Double {
+    var asInt: Int {
         return Int(self)
+    }
+    
+    var asDouble: Double {
+        return self
     }
 }
 
-extension String {
-    public var asInt: Int {
+public extension String {
+    var asInt: Int {
         let formatter = NumberFormatter()
         formatter.allowsFloats = false
         
@@ -35,13 +43,30 @@ extension String {
         
         return number.intValue
     }
+    
+    var asDouble: Double {
+        let formatter = NumberFormatter()
+        formatter.allowsFloats = true
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+        formatter.decimalSeparator = "."
+        
+        guard let number = formatter.number(from: self) else {
+            return 0
+        }
+        
+        return number.doubleValue
+    }
 }
 
 extension Double: IntTransformable {}
 extension String: IntTransformable {}
+extension Int: DoubleTransformable {}
+extension String: DoubleTransformable {}
+extension Double: DoubleTransformable {}
 
-extension String {
-    public func sizeFor(font: UIFont) -> CGSize {
+public extension String {
+    func sizeFor(font: UIFont) -> CGSize {
         let attributes = [NSAttributedString.Key.font: font]
         let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
         let options: NSStringDrawingOptions = [.usesFontLeading, .usesLineFragmentOrigin]
@@ -50,11 +75,11 @@ extension String {
         return bounds.size
     }
     
-    public func heightFor(font: UIFont) -> CGFloat {
+    func heightFor(font: UIFont) -> CGFloat {
         return self.sizeFor(font: font).height
     }
     
-    public func sizeFor(font: UIFont, width: CGFloat) -> CGSize {
+    func sizeFor(font: UIFont, width: CGFloat) -> CGSize {
         let attributes = [NSAttributedString.Key.font: font]
         let size = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
         let options: NSStringDrawingOptions = [.usesFontLeading, .usesLineFragmentOrigin]
@@ -63,11 +88,11 @@ extension String {
         return bounds.size
     }
     
-    public func heightFor(font: UIFont, width: CGFloat) -> CGFloat {
+    func heightFor(font: UIFont, width: CGFloat) -> CGFloat {
         return self.sizeFor(font: font, width: width).height
     }
     
-    public func sizeWith(font: UIFont) -> CGSize {
+    func sizeWith(font: UIFont) -> CGSize {
         let attributes = [NSAttributedString.Key.font: font]
         let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
         let options: NSStringDrawingOptions = [.usesFontLeading, .usesLineFragmentOrigin]
@@ -79,10 +104,47 @@ extension String {
 
 extension String {
     func capitalizingFirstLetter() -> String {
-      return prefix(1).uppercased() + self.lowercased().dropFirst()
+        return prefix(1).uppercased() + self.lowercased().dropFirst()
     }
 
     mutating func capitalizeFirstLetter() {
-      self = self.capitalizingFirstLetter()
+        self = self.capitalizingFirstLetter()
+    }
+}
+
+struct DoublePretty {
+    let value: Double
+}
+
+extension DoublePretty: CustomStringConvertible {
+    static var formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.allowsFloats = true
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+        formatter.decimalSeparator = "."
+        return formatter
+    }()
+    
+    var prettyValue: String {
+        guard let textValue = DoublePretty.formatter.string(from: NSNumber(floatLiteral: self.value)) else {
+            return "0"
+        }
+        
+        if textValue.suffix(3) == ".00" {
+            return String(textValue.dropLast(3))
+        }
+        
+        return textValue
+    }
+    
+    var description: String {
+        return self.prettyValue
+    }
+}
+
+extension Double {
+    var asPretty: DoublePretty {
+        return DoublePretty(value: self)
     }
 }

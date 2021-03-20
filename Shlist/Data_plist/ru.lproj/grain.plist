@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Каша овсяная</string>
+    <string>Каша гречневая</string>
+    <string>Каша перловая</string>
+    <string>Каша пшеничная</string>
+    <string>Крахмал кукурузный</string>
+    <string>Мука гречневая</string>
+    <string>Мука овсяная</string>
+    <string>Мука пшеничная</string>
+    <string>Мука ржаная</string>
+    <string>Мука рисовая</string>
+    <string>Отруби овсяные</string>
+    <string>Отруби пшеничные</string>
+    <string>Отруби рисовые</string>
+    <string>Лапша (макароны, паста)</string>
+    <string>Лапша гречневая (соба)</string>
+    <string>Лапша домашняя</string>
+    <string>Лапша из цельнозерновой пшеницы</string>
+    <string>Лапша кукурузная</string>
+    <string>Лапша рисовая</string>
+    <string>Лапша яичная</string>
+</array>
+</plist>

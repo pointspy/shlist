@@ -96,10 +96,10 @@ final class NumberInputViewController: UIViewController, PanModalPresentable {
     }
     
     func bindViewModel() {
-        injectedView.sumField.numberValue = viewModel.input.product.price.asInt
-        injectedView.quantityField.numberValue = viewModel.input.product.count.asInt
+        injectedView.sumField.numberValue = viewModel.input.product.price
+        injectedView.quantityField.numberValue = viewModel.input.product.count
         
-        let combine = Driver.combineLatest(injectedView.sumField.intDriver, injectedView.quantityField.intDriver)
+        let combine = Driver.combineLatest(injectedView.sumField.doubleDriver, injectedView.quantityField.doubleDriver)
             .asDriver()
 
         injectedView.doneButton.rx.tap.withLatestFrom(combine)
@@ -152,6 +152,20 @@ final class NumberInputViewController: UIViewController, PanModalPresentable {
                     containerView.transform = .identity
                 }, completion: nil)
             }).disposed(by: disposeBag)
+        
+        injectedView.sumField.rx.controlEvent(.editingDidBegin).asDriver()
+            .drive(onNext: {[weak self] in
+                guard let self = self else { return }
+                NumberView.shared.target = self.injectedView.sumField
+            }, onCompleted: nil, onDisposed: nil)
+            .disposed(by: disposeBag)
+        
+        injectedView.quantityField.rx.controlEvent(.editingDidBegin).asDriver()
+            .drive(onNext: {[weak self] in
+                guard let self = self else { return }
+                NumberView.shared.target = self.injectedView.quantityField
+            }, onCompleted: nil, onDisposed: nil)
+            .disposed(by: disposeBag)
     }
 }
 

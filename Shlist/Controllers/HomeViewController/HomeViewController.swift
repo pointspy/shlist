@@ -9,6 +9,8 @@
 import Action
 import Closures
 import DataCompression
+import Ink
+import Localize_Swift
 import Lottie
 import ObjectMapper
 import Overture
@@ -18,10 +20,9 @@ import RxGesture
 import RxKeyboard
 import RxSwift
 import RxSwiftExt
+import SwiftEntryKit
 import SwiftIcons
 import UIKit
-import Ink
-import SwiftEntryKit
 
 final class HomeViewController: UIViewController {
     lazy var markdownFile: MarkdownFile = {
@@ -34,7 +35,7 @@ final class HomeViewController: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 17)
         label.textColor = UIColor.label
-        label.text = "Список пуст"
+        label.text = NSLocalizedString("HomeViewcontroller.emptyList", comment: "")
         return label
     }()
     
@@ -120,7 +121,7 @@ final class HomeViewController: UIViewController {
 
                                                                                                     // NewProductHeader
                                                                                                     if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                                                                                                        cell.titleLabel.text = "Новые"
+                                                                                                        cell.titleLabel.text = NSLocalizedString("HomeViewcontroller.table.new", comment: "")
                                                                                                         cell.setUp()
                                                                                                         cell.selectionStyle = .none
 
@@ -165,7 +166,7 @@ final class HomeViewController: UIViewController {
                                                                                                     return UITableViewCell()
                                                                                                 case .completeHeader:
                                                                                                     if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                                                                                                        cell.titleLabel.text = "В корзине"
+                                                                                                        cell.titleLabel.text = NSLocalizedString("HomeViewcontroller.table.done", comment: "")
                                                                                                         cell.setUp()
                                                                                                         cell.selectionStyle = .none
 
@@ -227,29 +228,29 @@ final class HomeViewController: UIViewController {
         }
         
         if item.price > 0, item.count == 1 {
-            attrText = attrText + "\nЦена: ".at.attributed {
+            attrText = attrText + "\n\(NSLocalizedString("common.price", comment: "")): ".at.attributed {
                 $0.font(.systemFont(ofSize: 13)).foreground(color: UIColor.lightGray)
-            } + "\(getTextFrom(value: item.price))₽".at.attributed {
+            } + "\(item.price.asPretty)\(NSLocalizedString("common.currency", comment: ""))".at.attributed {
                 $0.font(.systemFont(ofSize: 13))
             }
         } else if item.price > 0, item.count > 0, item.count != 1.0 {
-            attrText = attrText + "\nЦена: ".at.attributed {
+            attrText = attrText + "\n\(NSLocalizedString("common.price", comment: "")): ".at.attributed {
                 $0.font(.systemFont(ofSize: 13)).foreground(color: UIColor.lightGray)
-            } + "\(getTextFrom(value: item.price))₽".at.attributed {
+            } + "\(item.price.asPretty)\(NSLocalizedString("common.currency", comment: ""))".at.attributed {
                 $0.font(.systemFont(ofSize: 13))
-            } + " Количество: ".at.attributed {
+            } + " \(NSLocalizedString("common.quantity", comment: "")): ".at.attributed {
                 $0.font(.systemFont(ofSize: 13)).foreground(color: UIColor.lightGray)
-            } + getTextFrom(value: item.count).at.attributed {
+            } + "\(item.count.asPretty)".at.attributed {
                 $0.font(.systemFont(ofSize: 13))
-            } + " Сумма: ".at.attributed {
+            } + " \(NSLocalizedString("common.sum", comment: "")): ".at.attributed {
                 $0.font(.systemFont(ofSize: 13)).foreground(color: UIColor.lightGray)
-            } + "\(getTextFrom(value: item.sum))₽".at.attributed {
+            } + "\(item.sum.asPretty)\(NSLocalizedString("common.currency", comment: ""))".at.attributed {
                 $0.font(.systemFont(ofSize: 13))
             }
         } else if item.price == 0, item.count != 1.0 {
-            attrText = attrText + "\nКоличество: ".at.attributed {
+            attrText = attrText + "\n\(NSLocalizedString("common.quantity", comment: "")): ".at.attributed {
                 $0.font(.systemFont(ofSize: 13)).foreground(color: UIColor.lightGray)
-            } + getTextFrom(value: item.count).at.attributed {
+            } + "\(item.count.asPretty)".at.attributed {
                 $0.font(.systemFont(ofSize: 13))
             }
         }
@@ -304,19 +305,21 @@ final class HomeViewController: UIViewController {
             Settings.Colors.themeService.switch(.light)
         }
         
-        navigationItem.title = "Список покупок"
+        navigationItem.title = NSLocalizedString("HomeViewcontroller.title", comment: "")
         navigationItem.rightBarButtonItem = moreBarButton
         
         let barButtonDriver: Driver<OutputAction> = moreBarButton.rx.tap.asDriver()
             .flatMap { _ -> Driver<OutputAction> in
                 
-                self.alert(title: "Действия",
+                self.alert(title: NSLocalizedString("HomeViewcontroller.action_sheet", comment: ""),
                            message: "",
-                           actions: [AlertAction(title: "Создать Markdown", type: 4, style: .default),
-                                     AlertAction(title: "Импорт из файла", type: 3, style: .default),
-                                     AlertAction(title: "Экспорт списка", type: 0, style: .default),
-                                     AlertAction(title: "Очистить список", type: 1, style: .destructive),
-                                     AlertAction(title: "Отмена", type: 2, style: .cancel)],
+                           actions: [
+                               AlertAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.export", comment: ""), type: 0, style: .default),
+                               AlertAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.import", comment: ""), type: 3, style: .default),
+                               AlertAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.markdown", comment: ""), type: 4, style: .default),
+                               AlertAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.clear", comment: ""), type: 1, style: .destructive),
+                               AlertAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.cancel", comment: ""), type: 2, style: .cancel)
+                           ],
                            preferredStyle: .actionSheet, barButtonItem: self.moreBarButton)
                     .observe(on: MainScheduler.instance)
                     .share(replay: 1, scope: .whileConnected)
@@ -332,7 +335,7 @@ final class HomeViewController: UIViewController {
             case 1:
                 
                 self.repository.removeAll()
-            
+
             case 3:
                   
                 self.importList()
@@ -363,10 +366,10 @@ final class HomeViewController: UIViewController {
         
         resultsTableViewController.searchController = searchController
         searchController.searchBar.autocapitalizationType = .none
-        searchController.searchBar.searchTextField.placeholder = NSLocalizedString("Введите чтобы добавить...", comment: "")
-        
+        searchController.searchBar.searchTextField.placeholder = NSLocalizedString("HomeViewcontroller.searchBar.placeholder", comment: "")
+         
         searchController.searchBar.searchTextField.leftView = UIImageView(image: UIImage(named: "add_icon"))
-        searchController.searchBar.setValue("Закрыть", forKey: "cancelButtonText")
+        searchController.searchBar.setValue(NSLocalizedString("HomeViewcontroller.searchBar.close", comment: ""), forKey: "cancelButtonText")
         
         searchController.searchBar.returnKeyType = .done
         
@@ -388,14 +391,14 @@ final class HomeViewController: UIViewController {
 //
 //                let ((oldStr, newStr), isActive) = value
 //
-////                if newStr.isEmpty, oldStr.count > 1, isActive {
-////                    DispatchQueue.main.async {
-////                        self.searchController.dismiss(animated: true, completion: { [weak self] in
-////                            guard let self = self else { return }
-////                            self.viewModel.input.searchActive.accept(false)
-////                        })
-////                    }
-////                }
+        ////                if newStr.isEmpty, oldStr.count > 1, isActive {
+        ////                    DispatchQueue.main.async {
+        ////                        self.searchController.dismiss(animated: true, completion: { [weak self] in
+        ////                            guard let self = self else { return }
+        ////                            self.viewModel.input.searchActive.accept(false)
+        ////                        })
+        ////                    }
+        ////                }
 //
 //            }).disposed(by: disposeBag)
         
@@ -507,10 +510,10 @@ final class HomeViewController: UIViewController {
             Settings.Store.saveItems(Settings.Store.productsRepo.allItems)
             let items: [Any] = [Settings.Store.tasksDocURL]
             let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
-            ac.popoverPresentationController?.sourceView = self.view
+            ac.popoverPresentationController?.sourceView = view
             present(ac, animated: true)
         } else {
-            let alert = UIAlertController(title: "Список пуст", message: "Для экспорта заполните список", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("HomeViewcontroller.emptyList", comment: ""), message: NSLocalizedString("HomeViewcontroller.searchBar.emptyListMessage", comment: ""), preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: { _ in })
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
@@ -525,10 +528,10 @@ final class HomeViewController: UIViewController {
     }
     
     private func createMarkdownText() {
-        let markDown = self.createMarkDown()
+        let markDown = createMarkDown()
         
         var parser = MarkdownParser()
-        let modifier = Modifier(target: .lists) { html, markdown in
+        let modifier = Modifier(target: .lists) { html, _ in
             
             let newHtml = html.replacingOccurrences(of: "[ ]", with: "⚪️").replacingOccurrences(of: "[x]", with: "🔵")
             
@@ -537,45 +540,44 @@ final class HomeViewController: UIViewController {
         parser.addModifier(modifier)
         let html = parser.html(from: markDown.markdown)
                   
-        self.markdownFile.content = markDown
+        markdownFile.content = markDown
         do {
-            try self.markdownFile.write()
+            try markdownFile.write()
         } catch {
             print("error")
         }
-        let storyb = UIStoryboard.init(name: "Main", bundle: nil)
+        let storyb = UIStoryboard(name: "Main", bundle: nil)
         
         if let vc = storyb.instantiateViewController(withIdentifier: "MarkDownViewController") as? MarkDownViewController {
             vc.loadViewIfNeeded()
             vc.contentMd = html
             vc.originalMarkDown = markDown.markdown
-            let panNVC = PanNavigationController.init(contentVC: [vc])
+            let panNVC = PanNavigationController(contentVC: [vc])
             panNVC.setNavigationBarHidden(false, animated: false)
             panNVC.navigationBar.prefersLargeTitles = false
-            self.presentPanModal(panNVC)
+            presentPanModal(panNVC)
         }
-      
     }
 }
 
 @available(iOS 14.0, *)
 extension HomeViewController {
     func configureActionItemMenu() {
-        let exportAction = UIAction(title: "Экспорт списка", image: UIImage(systemName: "square.and.arrow.up")) { [weak self] _ in
+        let exportAction = UIAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.export", comment: ""), image: UIImage(systemName: "square.and.arrow.up")) { [weak self] _ in
             guard let self = self else { return }
             self.exportList()
         }
-        let importListAction = UIAction(title: "Импорт списка", image: UIImage(systemName: "square.and.arrow.down")) { [weak self] _ in
+        let importListAction = UIAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.import", comment: ""), image: UIImage(systemName: "square.and.arrow.down")) { [weak self] _ in
             guard let self = self else { return }
             self.importList()
         }
         
-        let markdownAction = UIAction(title: "Создать Markdown", image: UIImage(systemName: "doc.richtext")) { [weak self] _ in
+        let markdownAction = UIAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.markdown", comment: ""), image: UIImage(systemName: "doc.richtext")) { [weak self] _ in
             guard let self = self else { return }
             self.createMarkdownText()
         }
         
-        let clearListAction = UIAction(title: "Очистить список", image: UIImage(systemName: "xmark.square"), attributes: .destructive) { _ in
+        let clearListAction = UIAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.clear", comment: ""), image: UIImage(systemName: "xmark.square"), attributes: .destructive) { _ in
             self.repository.removeAll()
         }
         
@@ -659,11 +661,11 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         guard indexPath.section == 1 || indexPath.section == 4 else { return nil }
-        let sumAction = UIContextualAction(style: .normal, title: "Сумма и количество") { _, _, completionHandler in
+        let sumAction = UIContextualAction(style: .normal, title: "\(NSLocalizedString("common.sum", comment: "")) \(NSLocalizedString("common.and", comment: "")) \(NSLocalizedString("common.quantity", comment: "").lowercased())") { _, _, completionHandler in
             // YOUR_CODE_HERE
             guard let cell = tableView.cellForRow(at: indexPath) as? ProductCellNew, let item = cell.product else { return }
         
-            let relay: BehaviorRelay<(Int, Int)> = .init(value: (item.price.asInt, item.count.asInt))
+            let relay: BehaviorRelay<(Double, Double)> = .init(value: (item.price, item.count))
             
             let inputView = NumberInputView()
             
@@ -681,8 +683,8 @@ extension HomeViewController: UITableViewDelegate {
                       
                     var newItem = item
                     
-                    newItem.set(price: values.0.asDouble)
-                    newItem.set(count: values.1.asDouble)
+                    newItem.set(price: values.0)
+                    newItem.set(count: values.1)
                     owner.repository.set(item: newItem)
                 }, onCompleted: nil, onDisposed: nil).disposed(by: self.disposeBag)
             
@@ -705,7 +707,7 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         guard indexPath.section == 1 || indexPath.section == 4 else { return nil }
-        let deleteAction = UIContextualAction(style: .normal, title: "Удалить") { [weak self] _, _, completionHandler in
+        let deleteAction = UIContextualAction(style: .normal, title: "\(NSLocalizedString("common.remove", comment: ""))") { [weak self] _, _, completionHandler in
             // YOUR_CODE_HERE
             guard let self = self, let cell = tableView.cellForRow(at: indexPath) as? ProductCellNew, let item = cell.product else { return }
         
@@ -717,25 +719,25 @@ extension HomeViewController: UITableViewDelegate {
         
         if let cell = tableView.cellForRow(at: indexPath) as? ProductCellNew, let item = cell.product {
             if Settings.Store.productDictionaryRepository.itemExist(item) {
-                saveToDictionaryAction = UIContextualAction(style: .normal, title: "Из словаря") { _, _, completionHandler in
+                saveToDictionaryAction = UIContextualAction(style: .normal, title: "\(NSLocalizedString("common.removeFromDictionary", comment: ""))") { _, _, completionHandler in
                     
-                    self.showOkCancel(message: "Удалить из словаря?", okButtonTitle: "Продолжить", successHandler: {
+                    self.showOkCancel(message: "\(NSLocalizedString("common.removeFromDictionary.question", comment: ""))", okButtonTitle: "\(NSLocalizedString("common.continue", comment: ""))", successHandler: {
                         Settings.Store.productDictionaryRepository.remove(item: item)
-                        self.showSimpleAlert(with: "", message: "Товар удалён из словаря.")
+                        self.showSimpleAlert(with: "", message: "\(NSLocalizedString("alert.removeFromDictionary.done", comment: ""))")
                         self.tableView.reloadData()
                     })
                     
                     completionHandler(true)
                 }
             } else {
-                saveToDictionaryAction = UIContextualAction(style: .normal, title: "В словарь") { [weak self] _, _, completionHandler in
+                saveToDictionaryAction = UIContextualAction(style: .normal, title: "\(NSLocalizedString("cell.addToDictionary", comment: ""))") { [weak self] _, _, completionHandler in
                    
-                    self?.showOkCancel(message: "Добавить в словарь?", okButtonTitle: "Продолжить", successHandler: {
+                    self?.showOkCancel(message: "\(NSLocalizedString("alert.addToDictionary", comment: ""))", okButtonTitle: NSLocalizedString("common.continue", comment: ""), successHandler: {
                         Settings.Store.productDictionaryRepository.add(item: item) { [weak self] result in
                             if result {
-                                self?.showSimpleAlert(with: "", message: "Товар добавлен в словарь.")
+                                self?.showSimpleAlert(with: "", message: "\(NSLocalizedString("alert.addToDictionary.done", comment: ""))")
                             } else {
-                                self?.showSimpleAlert(with: "", message: "Товар уже есть в словаре.")
+                                self?.showSimpleAlert(with: "", message: "\(NSLocalizedString("alert.addToDictionary.fail", comment: ""))")
                             }
                             self?.tableView.reloadData()
                         }
@@ -746,7 +748,7 @@ extension HomeViewController: UITableViewDelegate {
             }
         }
         
-        let chooseCategoryAction = UIContextualAction(style: .normal, title: "Категория") { [weak self] _, _, completionHandler in
+        let chooseCategoryAction = UIContextualAction(style: .normal, title: "\(NSLocalizedString("common.category", comment: ""))") { [weak self] _, _, completionHandler in
             guard let cell = tableView.cellForRow(at: indexPath) as? ProductCellNew, let item = cell.product else { return }
         
             let viewModel = CategorySelectViewModelImpl(categoriesRelay: Settings.Store.selectedCategoryDataSource.items, selectedCategoryRelay: Settings.Store.selectedCategoryDataSource.selectedCategory, for: item)
@@ -827,7 +829,7 @@ extension HomeViewController {
         let uniqCategories = categoriesNames.unique()
         
         var markdownData: [MarkdownConvertible] = [
-            MarkdownHeader(title: "Список покупок", level: .h1),
+            MarkdownHeader(title: NSLocalizedString("HomeViewcontroller.title", comment: ""), level: .h1),
             "---"
         ]
         
@@ -845,11 +847,11 @@ extension HomeViewController {
             markdownData.append(taskList)
         }
         
-        let sum = repository.allItems.reduce(0, {result, product in
-            return result + product.sum
-        }).asInt
+        let sum = repository.allItems.reduce(0) { result, product in
+            result + product.sum
+        }.asInt
         markdownData.append("---")
-        let sumStr = "**Общая сумма: `\(sum)₽`**".blockquoted
+        let sumStr = "**\(NSLocalizedString("common.totalSum", comment: "")): `\(sum)\(NSLocalizedString("common.currency", comment: ""))`**".blockquoted
         markdownData.append(sumStr)
         markdownData.append("\n")
         

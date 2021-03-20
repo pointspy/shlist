@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Cream cheese</string>
+    <string>Brie cheese</string>
+    <string>Gouda cheese</string>
+    <string>Camembert cheese</string>
+    <string>Goat cheese</string>
+    <string>Mozzarella cheese</string>
+    <string>Parmesan cheese</string>
+    <string>Feta cheese</string>
+    <string>Philadelphia cheese</string>
+    <string>Swiss cheese</string>
+    <string>Edam cheese</string>
+    <string>Cheeses with mold</string>
+    <string>Yogurt</string>
+    <string>Kefir</string>
+    <string>Butter</string>
+    <string>Milk</string>
+    <string>Goat's milk</string>
+    <string>Cow's milk</string>
+    <string>Condensed milk</string>
+    <string>Milk dry</string>
+    <string>Milk whey</string>
+    <string>Ryazhenka</string>
+    <string>Sour cream</string>
+    <string>Skimmed sour cream</string>
+    <string>Cottage cheese 2% fat content</string>
+    <string>Protein supplements based on milk</string>
+    <string>Cottage cheese</string>
+    <string>Processed cheese</string>
+</array>
+</plist>

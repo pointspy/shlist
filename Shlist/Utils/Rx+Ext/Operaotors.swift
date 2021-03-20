@@ -64,9 +64,9 @@ func <~> <T: IntTransformable>(lhs: BehaviorRelay<T>, rhs: BehaviorRelay<T>) -> 
 }
 
 func <~> (lhs: BehaviorRelay<String?>, rhs: BehaviorRelay<Double>) -> Disposable {
-    typealias ItemType = (current: Int, previous: Int)
+    typealias ItemType = (current: Double, previous: Double)
     
-    return Observable.combineLatest(lhs.asObservable().map {$0 ?? "0"}.asIntObservable().currentAndPrevious(), rhs.asObservable().asIntObservable().currentAndPrevious())
+    return Observable.combineLatest(lhs.asObservable().map {$0 ?? "0"}.asDoubleObservable().currentAndPrevious(), rhs.asObservable().asDoubleObservable().currentAndPrevious())
         .observe(on: MainScheduler.asyncInstance)
         .filter({ (first: ItemType, second: ItemType) -> Bool in
             return first.current != second.current

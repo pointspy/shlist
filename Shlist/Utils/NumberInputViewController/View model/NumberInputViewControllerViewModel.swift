@@ -15,13 +15,13 @@ protocol NumberInputViewControllerViewModelInput {
 //    var quantityTrigger: AnyObserver<Int> { get }
 //    var priceTrigger: AnyObserver<(Int, Int)> { get }
     
-    var okTrigger: AnyObserver<(Int, Int)> { get }
+    var okTrigger: AnyObserver<(Double, Double)> { get }
     var cancelTrigger: AnyObserver<Void> { get }
     var product: Product { get }
 }
 
 protocol NumberInputViewControllerViewModelOutput {
-    var valuesDriver: Driver<(Int, Int)> { get }
+    var valuesDriver: Driver<(Double, Double)> { get }
     
 }
 

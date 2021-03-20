@@ -16,7 +16,10 @@ import UIKit
 public final class NumberTextField: UITextField {
     lazy var numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
-        formatter.allowsFloats = false
+        formatter.allowsFloats = true
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+        formatter.decimalSeparator = "."
         return formatter
     }()
     
@@ -27,10 +30,10 @@ public final class NumberTextField: UITextField {
         let borderColorHighlighted: UIColor
         let cornerRadius: CGFloat
         
-        let minValue: Int
-        let maxValue: Int
+        let minValue: Double
+        let maxValue: Double
         
-        static let defaultSettings = Settings(borderColor: 0x767680.color.withAlphaComponent(0.24), borderColorHighlighted: 0x767680.color, cornerRadius: 12.0, minValue: 1, maxValue: Int.max)
+        static let defaultSettings = Settings(borderColor: 0x767680.color.withAlphaComponent(0.24), borderColorHighlighted: 0x767680.color, cornerRadius: 12.0, minValue: 0, maxValue: Double.greatestFiniteMagnitude)
     }
     
     var settings = Settings.defaultSettings {
@@ -46,35 +49,35 @@ public final class NumberTextField: UITextField {
     }
     
 //    @IBInspectable
-    public var minValue: Int = 1 {
+    public var minValue: Double = 0 {
         didSet {
-            stepper.minimumValue = minValue.asDouble
-            intRelay.accept(minValue)
+            stepper.minimumValue = minValue
+            doubleRelay.accept(minValue)
         }
     }
 
 //    @IBInspectable
-    public var maxValue = Int.max {
+    public var maxValue = Double.greatestFiniteMagnitude {
         didSet {
-            stepper.maximumValue = maxValue.asDouble
+            stepper.maximumValue = maxValue
         }
     }
 
     private lazy var textRelay: BehaviorRelay<String?> = .init(value: "\(self.minValue)")
     
-    public lazy var intRelay: BehaviorRelay<Int> = .init(value: self.minValue)
+    public lazy var doubleRelay: BehaviorRelay<Double> = .init(value: self.minValue)
     
-    public var intDriver: Driver<Int> {
-        return intRelay.asDriver()
+    public var doubleDriver: Driver<Double> {
+        return doubleRelay.asDriver()
     }
     
     public func hideStepper(hide: Bool) {
         stepper.isHidden = hide
     }
     
-    public var numberValue: Int {
-        get { return intRelay.value }
-        set { intRelay.accept(newValue) }
+    public var numberValue: Double {
+        get { return doubleRelay.value }
+        set { doubleRelay.accept(newValue) }
     }
       
     private lazy var stepper = UIStepper()
@@ -93,16 +96,7 @@ public final class NumberTextField: UITextField {
     }
      
     static let stepperBounds = CGRect(x: 0, y: 0, width: 94, height: 32)
-    
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//
-//        setup(with: nil)
-//        (rx.text <-> textRelay).disposed(by: disposedBag)
-//        (stepper.rx.valueInt <-> intRelay).disposed(by: disposedBag)
-//
-//        (textRelay <~> intRelay).disposed(by: disposedBag)
-//    }
+
     
     override public func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
@@ -130,9 +124,9 @@ public final class NumberTextField: UITextField {
         setup(with: nil)
         
         (rx.text <-> textRelay).disposed(by: disposedBag)
-        (stepper.rx.valueInt <-> intRelay).disposed(by: disposedBag)
+        (stepper.rx.valueDouble <-> doubleRelay).disposed(by: disposedBag)
 
-        (textRelay <~> intRelay).disposed(by: disposedBag)
+        (textRelay <~> doubleRelay).disposed(by: disposedBag)
         
         
     }
@@ -182,11 +176,11 @@ public final class NumberTextField: UITextField {
 
 
 public extension Reactive where Base: NumberTextField {
-    var currentValue: ControlProperty<Int> {
+    var currentValue: ControlProperty<Double> {
         return value
     }
 
-    var value: ControlProperty<Int> {
+    var value: ControlProperty<Double> {
         return base.rx.controlProperty(editingEvents: .valueChanged, getter: { textField in
             textField.numberValue
         }, setter: { textField, value in
@@ -205,6 +199,18 @@ public extension Reactive where Base: UIStepper {
             stepper.value.asInt
         }, setter: { stepper, value in
             stepper.value = value.asDouble
+        })
+    }
+    
+    var currentValueDouble: ControlProperty<Double> {
+        return valueDouble
+    }
+
+    var valueDouble: ControlProperty<Double> {
+        return base.rx.controlProperty(editingEvents: .valueChanged, getter: { stepper in
+            stepper.value
+        }, setter: { stepper, value in
+            stepper.value = value
         })
     }
 }

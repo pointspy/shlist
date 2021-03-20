@@ -23,20 +23,20 @@ final class NumberInputViewControllerViewModelImpl: NumberInputViewControllerVie
         return Observable<Void>.empty()
     }
     
-    lazy var okAction: Action<(Int, Int), (Int, Int)> = Action<(Int, Int), (Int, Int)> {price, quantity in
+    lazy var okAction: Action<(Double, Double), (Double, Double)> = Action<(Double, Double), (Double, Double)> {price, quantity in
         
         let newQuantity = quantity >= 1 ? quantity : 1
 
-        return Observable<(Int , Int)>.just((price, newQuantity))
+        return Observable<(Double , Double)>.just((price, newQuantity))
     }
     
-    var valuesDriver: Driver<(Int, Int)> {
+    var valuesDriver: Driver<(Double, Double)> {
         return okAction.elements.asDriver(onErrorJustReturn: (0, 1))
     }
     
     var product: Product
     
-    init(product: Product, valuesRelay: BehaviorRelay<(Int, Int)>) {
+    init(product: Product, valuesRelay: BehaviorRelay<(Double, Double)>) {
         self.product = product
         
         valuesDriver.drive(valuesRelay).disposed(by: bag)

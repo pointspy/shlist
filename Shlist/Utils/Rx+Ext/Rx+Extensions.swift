@@ -30,6 +30,14 @@ public extension ObservableType where Element: IntTransformable {
     }
 }
 
+public extension ObservableType where Element: DoubleTransformable {
+    func asDoubleObservable() -> Observable<Double> {
+        return self.map { element in
+            element.asDouble
+        }
+    }
+}
+
 public extension ObservableType where Element == Double {
     func asIntObservable() -> Observable<Int> {
         return self.map { element in
@@ -47,10 +55,9 @@ public extension ObservableType where Element == String {
 }
 
 extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingStrategy, Element: IntTransformable {
-    
     func asIntDriver() -> Driver<Int> {
-        return self.map {element in
-            return element.asInt
+        return self.map { element in
+            element.asInt
         }
     }
 }

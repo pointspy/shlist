@@ -141,7 +141,7 @@ func withoutRuble() -> (UITextField) -> Void {
     return {
         guard let text = $0.text else { return }
 
-        let strNew = text.replacingOccurrences(of: "₽", with: "")
+        let strNew = text.replacingOccurrences(of: "\(NSLocalizedString("common.currency", comment: ""))", with: "")
         $0.text = strNew
     }
 }

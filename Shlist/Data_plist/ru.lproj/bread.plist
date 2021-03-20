@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Хлеб 🍞</string>
+    <string>Блины 🥞</string>
+    <string>Булочки</string>
+    <string>Лаваш</string>
+    <string>Сухари панировочные</string>
+    <string>Тортилья</string>
+    <string>Фокачча</string>
+    <string>Хлеб белый пшеничный</string>
+    <string>Хлеб мультизерновой</string>
+    <string>Хлеб овсяный</string>
+    <string>Хлеб пшеничный цельнозерновой</string>
+    <string>Хлеб ржаной</string>
+    <string>Хлебцы мультизерновые</string>
+    <string>Хлебцы ржаные</string>
+    <string>Батон 🥖</string>
+    <string>Пирог 🥮</string>
+</array>
+</plist>

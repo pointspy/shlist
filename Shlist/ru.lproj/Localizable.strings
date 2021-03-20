@@ -1,0 +1,123 @@
+"alert.addToDictionary" = "Добавить товар в словарь?";
+
+"alert.addToDictionary.done" = "Товар добавлен в словарь.";
+
+"alert.addToDictionary.fail" = "Товар уже есть в словаре.";
+
+"alert.removeFromDictionary.done" = "Товар удалён из словаря.";
+
+"category.name.bread" = "Хлебобулочные";
+
+"category.name.cafe" = "Кафе и ресторан";
+
+"category.name.chemical" = "Бытовая химия";
+
+"category.name.clothes" = "Одежда";
+
+"category.name.cosmetic" = "Косметика";
+
+"category.name.drink" = "Напитки";
+
+"category.name.eggs" = "Яйца";
+
+"category.name.fish" = "Рыба";
+
+"category.name.furniture" = "Мебель";
+
+"category.name.grain" = "Мука и зерно";
+
+"category.name.meat" = "Мясо";
+
+"category.name.milk" = "Молочные продукты";
+
+"category.name.oilAndSpices" = "Масла, соусы и специи";
+
+"category.name.other" = "Другое";
+
+"category.name.pharmacy" = "Аптека";
+
+"category.name.repair" = "Инструмент";
+
+"category.name.snack" = "Снэк";
+
+"category.name.sweat" = "Сладости";
+
+"category.name.veget" = "Овощи и фрукты";
+
+"cell.addToDictionary" = "Добавить в словарь";
+
+"common.and" = "и";
+
+"common.category" = "Категория";
+
+"common.continue" = "Продолжить";
+
+"common.copy" = "Копировать";
+
+"common.currency" = "₽";
+
+"common.done" = "Готово";
+
+"common.export" = "Экспорт";
+
+"common.options" = "Опции";
+
+"common.price" = "Цена";
+
+"common.quantity" = "Количество";
+
+"common.remove" = "Удалить";
+
+"common.removeFromDictionary" = "Удалить из словаря";
+
+"common.removeFromDictionary.question" = "Удалить из словаря?";
+
+"common.save" = "Сохранить";
+
+"common.sum" = "Сумма";
+
+"common.totalSum" = "Общая сумма";
+
+"HomeViewcontroller.action_sheet" = "Действия";
+
+"HomeViewcontroller.actionSheet.cancel" = "Отмена";
+
+"HomeViewcontroller.actionSheet.clear" = "Очистить список";
+
+"HomeViewcontroller.actionSheet.export" = "Экспорт списка";
+
+"HomeViewcontroller.actionSheet.import" = "Импорт списка из файла";
+
+"HomeViewcontroller.actionSheet.markdown" = "Создать markdown";
+
+"HomeViewcontroller.emptyList" = "Список пуст";
+
+"HomeViewcontroller.searchBar.close" = "Закрыть";
+
+"HomeViewcontroller.searchBar.emptyListMessage" = "Для экспорта заполните список.";
+
+"HomeViewcontroller.searchBar.placeholder" = "Введите чтобы добавить...";
+
+"HomeViewcontroller.table.done" = "В корзине";
+
+"HomeViewcontroller.table.new" = "Новые";
+
+"HomeViewcontroller.title" = "Список покупок";
+
+"markdown.export.file" = "Поделиться файлом Markdown";
+
+"markdown.export.pdf" = "Поделиться PDF";
+
+"markdown.export.text" = "Поделиться текстом Markdown";
+
+"ResultsTableViewController.AddNew" = "Добавить";
+
+"ResultsTableViewController.Found" = "Найдено";
+
+"ResultsTableViewController.Last" = "Последние";
+
+"ResultsTableViewController.options.saveInDictionary" = "Сохранить в словаре";
+
+"ResultsTableViewController.SelectCategory" = "Укажите категорию";
+
+"ResultsTableViewController.toast.addLabel" = "Товар добавлен";

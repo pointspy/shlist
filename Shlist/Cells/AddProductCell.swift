@@ -48,14 +48,14 @@ final class AddProductCell: UITableViewCell, NibReusable {
             ))
         }
         
-        backView.cornerRadius = 10
+        backView.cornerRadius = backView.layer.bounds.height / 2
         backView.isSquircle = false
         
         Settings.Colors.themeService.rx
             .bind({ $0.cellBackgroundColor }, to: rx.backgroundColor, contentView.rx.backgroundColor)
             .disposed(by: disposeBag)
         
-        iconView.image = UIImage(named: "add_icon")?.withTintColor(.white)
+        iconView.image = UIImage(systemName: "plus.circle.fill")?.with(color: .white)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -71,5 +71,17 @@ final class AddProductCell: UITableViewCell, NibReusable {
     override func prepareForReuse() {
         disposeBag = DisposeBag()
         super.prepareForReuse()
+    }
+    
+    public func animatePresent() {
+        
+        self.iconView.transform = CGAffineTransform.identity.scaledBy(x: 0.5, y: 0.5).rotated(by: .pi)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.35, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.0, options: .beginFromCurrentState, animations: {[weak self] in
+            guard let self = self else { return }
+            self.iconView.transform = .identity
+            
+        }, completion: nil)
+        
     }
 }

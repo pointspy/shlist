@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Fish</string>
+	<string>Anchovies</string>
+	<string>Pink Salmon</string>
+	<string>Yellowtail (lacedra)</string>
+	<string>Flounder</string>
+	<string>Carp</string>
+	<string>Chum</string>
+	<string>Coho</string>
+	<string>Butterfish (escolar)</string>
+	<string>Pollock</string>
+	<string>Burbot</string>
+	<string>Sea bass (red)</string>
+	<string>Sturgeon</string>
+	<string>Halibut</string>
+	<string>Sardine</string>
+	<string>Herring</string>
+	<string>Salmon</string>
+	<string>Sea bass</string>
+	<string>Mackerel</string>
+	<string>Horse Mackerel</string>
+	<string>Walleye</string>
+	<string>Terpug</string>
+	<string>Tilapia</string>
+	<string>Cod</string>
+	<string>Tuna</string>
+	<string>Eel</string>
+	<string>Trout</string>
+	<string>Chinook</string>
+	<string>Pike</string>
+	<string>Red or black caviar</string>
+	<string>Fish</string>
+	<string>Squid</string>
+	<string>Mussels</string>
+	<string>Clams</string>
+	<string>Scallop</string>
+	<string>Oysters</string>
+	<string>Crab</string>
+	<string>Shrimp</string>
+	<string>Lobsters (lobsters, lobsters)</string>
+	<string>Crayfish</string>
+	<string>Algae nori</string>
+	<string>Sea cabbage</string>
+</array>
+</plist>

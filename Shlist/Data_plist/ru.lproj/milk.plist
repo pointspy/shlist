@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Сыр cливочный</string>
+    <string>Сыр Бри</string>
+    <string>Сыр Гауда</string>
+    <string>Сыр Камамбер</string>
+    <string>Сыр козий</string>
+    <string>Сыр Моцарелла</string>
+    <string>Сыр Пармезан</string>
+    <string>Сыр фета</string>
+    <string>Сыр Филадельфия</string>
+    <string>Сыр швейцарский</string>
+    <string>Сыр Эдам</string>
+    <string>Сыры с плесенью</string>
+    <string>Йогурт</string>
+    <string>Кефир</string>
+    <string>Масло сливочное</string>
+    <string>Молоко</string>
+    <string>Молоко козье</string>
+    <string>Молоко коровье</string>
+    <string>Молоко сгущённое</string>
+    <string>Молоко сухое</string>
+    <string>Молочная сыворотка</string>
+    <string>Ряженка</string>
+    <string>Сметана</string>
+    <string>Сметана обезжиренная</string>
+    <string>Творог 2% жирности</string>
+    <string>Протеиновые добавки на основе молока</string>
+    <string>Сыр творожный</string>
+    <string>Сыр плавленный</string>
+</array>
+</plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Вода 💧</string>
+	<string>Минеральная вода 💧</string>
+	<string>Сок 🧃</string>
+	<string>Кокосовое молоко</string>
+	<string>Морс клюквенный</string>
+	<string>Сок абрикосовый (нектар)</string>
+	<string>Сок 🧃 апельсиновый</string>
+	<string>Сок 🧃 виноградный</string>
+	<string>Сок 🧃 гранатовый</string>
+	<string>Сок 🧃 грейпфрутовый</string>
+	<string>Сок 🧃 грушевый (нектар)</string>
+	<string>Сок 🧃 лайма</string>
+	<string>Сок 🧃 лимонный</string>
+	<string>Сок 🧃 манго (нектар)</string>
+	<string>Сок 🧃 персиковый (нектар)</string>
+	<string>Сок 🧃 яблочный</string>
+	<string>Кока-кола 🥤</string>
+	<string>Кофе ☕️</string>
+	<string>Цикорий</string>
+	<string>Чай 🍵</string>
+	<string>Чай 🍵 зелёный</string>
+	<string>Чай 🍵 чёрный</string>
+	<string>Энергетический напиток</string>
+	<string>Вино 🍷</string>
+	<string>Вино 🍷 белое</string>
+	<string>Вино 🍷 красное</string>
+	<string>Вино 🍷 розовое</string>
+	<string>Виски 🥃</string>
+	<string>Водка</string>
+	<string>Джин</string>
+	<string>Пиво 🍺</string>
+	<string>Ром</string>
+	<string>Саке 🍶</string>
+	<string>Мартини 🍸</string>
+	<string>Шампанское 🍾</string>
+</array>
+</plist>

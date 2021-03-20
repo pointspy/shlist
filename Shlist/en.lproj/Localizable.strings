@@ -1,0 +1,123 @@
+"alert.addToDictionary" = "Do you want to add item to the dictionary?";
+
+"alert.addToDictionary.done" = "The item was added to the dictionary.";
+
+"alert.addToDictionary.fail" = "The item is already in the dictionary.";
+
+"alert.removeFromDictionary.done" = "The item was removed from the dictionary.";
+
+"category.name.bread" = "Bakery shops";
+
+"category.name.cafe" = "Cafe and restaurant";
+
+"category.name.chemical" = "Household chemicals";
+
+"category.name.clothes" = "Clothes";
+
+"category.name.cosmetic" = "Cosmetics";
+
+"category.name.drink" = "Drinks";
+
+"category.name.eggs" = "Eggs";
+
+"category.name.fish" = "Fish";
+
+"category.name.furniture" = "Furniture";
+
+"category.name.grain" = "Flour and grain";
+
+"category.name.meat" = "Meat";
+
+"category.name.milk" = "Dairy products";
+
+"category.name.oilAndSpices" = "Oils, sauces and spices";
+
+"category.name.other" = "Other";
+
+"category.name.pharmacy" = "Pharmacy";
+
+"category.name.repair" = "Tools";
+
+"category.name.snack" = "Snack bar";
+
+"category.name.sweat" = "Sweets";
+
+"category.name.veget" = "Vegetables and fruits";
+
+"cell.addToDictionary" = "Add to dictionary";
+
+"common.and" = "and";
+
+"common.category" = "Category";
+
+"common.continue" = "OK";
+
+"common.copy" = "Copy";
+
+"common.currency" = "$";
+
+"common.done" = "Done";
+
+"common.export" = "Export";
+
+"common.options" = "Options";
+
+"common.price" = "Price";
+
+"common.quantity" = "Quantity";
+
+"common.remove" = "Remove";
+
+"common.removeFromDictionary" = "Delete from Dictionary";
+
+"common.removeFromDictionary.question" = "Do you want to remove item from the dictionary?";
+
+"common.save" = "Save";
+
+"common.sum" = "Sum";
+
+"common.totalSum" = "Total sum";
+
+"HomeViewcontroller.action_sheet" = "Actions";
+
+"HomeViewcontroller.actionSheet.cancel" = "Cancel";
+
+"HomeViewcontroller.actionSheet.clear" = "Clear list";
+
+"HomeViewcontroller.actionSheet.export" = "Export";
+
+"HomeViewcontroller.actionSheet.import" = "Import";
+
+"HomeViewcontroller.actionSheet.markdown" = "Create markdown";
+
+"HomeViewcontroller.emptyList" = "The list is empty";
+
+"HomeViewcontroller.searchBar.close" = "Close";
+
+"HomeViewcontroller.searchBar.emptyListMessage" = "Fill in the list for export.";
+
+"HomeViewcontroller.searchBar.placeholder" = "Enter to add...";
+
+"HomeViewcontroller.table.done" = "Done";
+
+"HomeViewcontroller.table.new" = "New";
+
+"HomeViewcontroller.title" = "Shopping list";
+
+"markdown.export.file" = "Share markdown file";
+
+"markdown.export.pdf" = "Share PDF";
+
+"markdown.export.text" = "Share markdown text";
+
+"ResultsTableViewController.AddNew" = "Add new";
+
+"ResultsTableViewController.Found" = "Found";
+
+"ResultsTableViewController.Last" = "Last";
+
+"ResultsTableViewController.options.saveInDictionary" = "Save to Dictionary";
+
+"ResultsTableViewController.SelectCategory" = "Select a category";
+
+"ResultsTableViewController.toast.addLabel" = "Product added";

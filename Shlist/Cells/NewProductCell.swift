@@ -137,7 +137,7 @@ final class NewProductCell: UITableViewCell, NibReusable {
                             withTextColor(color: .white)))
 
                     if let text = self.priceField.text, !text.isEmpty {
-                        self.priceField.text = text.replacingOccurrences(of: "₽", with: "")
+                        self.priceField.text = text.replacingOccurrences(of: "\(NSLocalizedString("common.currency", comment: ""))", with: "")
                     }
                 }
 
@@ -157,9 +157,9 @@ final class NewProductCell: UITableViewCell, NibReusable {
                             withTextColor(color: .label)))
 
                     if let text = self.priceField.text, !text.isEmpty {
-                        self.priceField.text = "\(text)₽"
+                        self.priceField.text = "\(text)\(NSLocalizedString("common.currency", comment: ""))"
                     } else {
-                        self.priceField.text = "0₽"
+                        self.priceField.text = "0\(NSLocalizedString("common.currency", comment: ""))"
                     }
                 }
 

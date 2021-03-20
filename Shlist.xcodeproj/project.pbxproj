@@ -15,7 +15,6 @@
 		F60BB70F25F39184008B7A75 /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60BB70E25F39184008B7A75 /* ToastView.xib */; };
 		F60BB71325F39249008B7A75 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60BB71225F39249008B7A75 /* ToastView.swift */; };
 		F60BB73825F3AD56008B7A75 /* add.json in Resources */ = {isa = PBXBuildFile; fileRef = F60BB73725F3AD55008B7A75 /* add.json */; };
-		F60BB74425F402A4008B7A75 /* add_plus.json in Resources */ = {isa = PBXBuildFile; fileRef = F60BB74325F402A4008B7A75 /* add_plus.json */; };
 		F60DFFE225C6B06B000F4597 /* newSadBag.json in Resources */ = {isa = PBXBuildFile; fileRef = F60DFFE125C6B06B000F4597 /* newSadBag.json */; };
 		F6103A602441BFA2009C5A31 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6103A5F2441BFA2009C5A31 /* FooterCell.swift */; };
 		F6103A622441C5BE009C5A31 /* PrettyPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6103A612441C5BE009C5A31 /* PrettyPrintable.swift */; };
@@ -57,6 +56,9 @@
 		F638B2B025ECC3BB00AD019F /* PanNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F638B2AF25ECC3BB00AD019F /* PanNavigationController.swift */; };
 		F638B2B725ECE50900AD019F /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = F638B2B625ECE50900AD019F /* Ink */; };
 		F644C58325D5E4E5002A6EDA /* NumberInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644C58225D5E4E5002A6EDA /* NumberInputViewController.swift */; };
+		F657578925F966BF00EB8D13 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657578625F966BF00EB8D13 /* NumberView.swift */; };
+		F657578B25F966BF00EB8D13 /* NumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F657578825F966BF00EB8D13 /* NumberView.xib */; };
+		F657579125F9676600EB8D13 /* Keyboard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F657579025F9676600EB8D13 /* Keyboard.xcassets */; };
 		F665C0CE25C6A41300D15C7E /* sadEmptyBox.json in Resources */ = {isa = PBXBuildFile; fileRef = F665C0CD25C6A41300D15C7E /* sadEmptyBox.json */; };
 		F66E29ED2449F4DD00E732B1 /* UISearchResultsUpdating+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E29EC2449F4DD00E732B1 /* UISearchResultsUpdating+Rx.swift */; };
 		F66E29F42449F8D000E732B1 /* FilterListStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66E29F32449F8D000E732B1 /* FilterListStateViewModel.swift */; };
@@ -307,9 +309,7 @@
 		F6C067BE243F4D9E00039897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C067BD243F4D9E00039897 /* AppDelegate.swift */; };
 		F6C067C0243F4D9E00039897 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C067BF243F4D9E00039897 /* SceneDelegate.swift */; };
 		F6C067C2243F4D9E00039897 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C067C1243F4D9E00039897 /* HomeViewController.swift */; };
-		F6C067C5243F4D9E00039897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C067C3243F4D9E00039897 /* Main.storyboard */; };
 		F6C067C7243F4D9E00039897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C067C6243F4D9E00039897 /* Assets.xcassets */; };
-		F6C067CA243F4D9F00039897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C067C8243F4D9F00039897 /* LaunchScreen.storyboard */; };
 		F6C067D2243F4DBA00039897 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F6C067D1243F4DBA00039897 /* Podfile */; };
 		F6C067D4243F5E7900039897 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C067D3243F5E7900039897 /* ResultsTableViewController.swift */; };
 		F6C067D8243F5EE300039897 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C067D7243F5EE300039897 /* Product.swift */; };
@@ -335,9 +335,33 @@
 		F6C0680B24411FC400039897 /* FluidHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0680624411FC400039897 /* FluidHighlighter.swift */; };
 		F6C0680C24411FC400039897 /* UIControl+FH.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C0680724411FC400039897 /* UIControl+FH.swift */; };
 		F6C5CF4A25CCD81C00C24986 /* icon-doc.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C5CF4925CCD81C00C24986 /* icon-doc.png */; };
+		F6CADA8925F9458D00FAF37A /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = F6CADA8825F9458D00FAF37A /* Localize_Swift */; };
 		F6DC98E5245AFFA100BE5265 /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC98E4245AFFA100BE5265 /* Object+ClassName.swift */; };
 		F6DC98E7245B147B00BE5265 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC98E6245B147A00BE5265 /* UIViewController+Child.swift */; };
 		F6DC9905245B428000BE5265 /* ChromaColorPicker+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC9904245B428000BE5265 /* ChromaColorPicker+Rx.swift */; };
+		F6E6FB6525F8E27C00E82AFF /* add_plus.json in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FB6425F8E27C00E82AFF /* add_plus.json */; };
+		F6E6FB7925F8E43300E82AFF /* BartyCrouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E6FB7825F8E43300E82AFF /* BartyCrouch.swift */; };
+		F6E6FB9225F8E84A00E82AFF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FB9425F8E84A00E82AFF /* Localizable.strings */; };
+		F6E6FBA325F8ECFC00E82AFF /* veget.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FB9F25F8ECFC00E82AFF /* veget.plist */; };
+		F6E6FBAA25F8F19800E82AFF /* fish.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FBAC25F8F19800E82AFF /* fish.plist */; };
+		F6E6FBB725F8F28500E82AFF /* meat.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FBB925F8F28500E82AFF /* meat.plist */; };
+		F6E6FBC225F8F3B500E82AFF /* egg.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FBC425F8F3B500E82AFF /* egg.plist */; };
+		F6E6FBCF25F8F50200E82AFF /* milk.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FBD125F8F50200E82AFF /* milk.plist */; };
+		F6E6FBDC25F8F5C500E82AFF /* grain.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FBDE25F8F5C500E82AFF /* grain.plist */; };
+		F6E6FBE925F8F66F00E82AFF /* oilAndSpices.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FBEB25F8F66F00E82AFF /* oilAndSpices.plist */; };
+		F6E6FBF625F8F70400E82AFF /* bread.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FBF825F8F70400E82AFF /* bread.plist */; };
+		F6E6FC0325F8F7B800E82AFF /* sweat.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC0525F8F7B800E82AFF /* sweat.plist */; };
+		F6E6FC1025F8F8B600E82AFF /* cafe.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC1225F8F8B600E82AFF /* cafe.plist */; };
+		F6E6FC1F25F8FB0700E82AFF /* drink.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC2125F8FB0700E82AFF /* drink.plist */; };
+		F6E6FC2C25F8FC8700E82AFF /* cosmetic.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC2E25F8FC8700E82AFF /* cosmetic.plist */; };
+		F6E6FC3925F8FD7D00E82AFF /* pharmacy.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC3B25F8FD7D00E82AFF /* pharmacy.plist */; };
+		F6E6FC4625F8FDEF00E82AFF /* snack.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC4825F8FDEF00E82AFF /* snack.plist */; };
+		F6E6FC5525F8FE7500E82AFF /* other.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC5725F8FE7500E82AFF /* other.plist */; };
+		F6E6FC6425F8FFD100E82AFF /* clothes.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC6625F8FFD100E82AFF /* clothes.plist */; };
+		F6E6FC7325F9005400E82AFF /* furniture.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC7525F9005400E82AFF /* furniture.plist */; };
+		F6E6FC8025F900BB00E82AFF /* repair.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC8225F900BB00E82AFF /* repair.plist */; };
+		F6E6FC8B25F903E300E82AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC8D25F903E300E82AFF /* LaunchScreen.storyboard */; };
+		F6E6FC9425F903EF00E82AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E6FC9625F903EF00E82AFF /* Main.storyboard */; };
 		F6F2685F244F57E1005B7336 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2685E244F57E0005B7336 /* Dispatch.swift */; };
 		F6F26861244FA4A0005B7336 /* AddProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F26860244FA4A0005B7336 /* AddProductCell.xib */; };
 		F6F26863244FA555005B7336 /* AddProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F26862244FA555005B7336 /* AddProductCell.swift */; };
@@ -380,7 +404,6 @@
 		F60BB70E25F39184008B7A75 /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
 		F60BB71225F39249008B7A75 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		F60BB73725F3AD55008B7A75 /* add.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = add.json; sourceTree = "<group>"; };
-		F60BB74325F402A4008B7A75 /* add_plus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = add_plus.json; sourceTree = "<group>"; };
 		F60DFFE125C6B06B000F4597 /* newSadBag.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newSadBag.json; sourceTree = "<group>"; };
 		F6103A5F2441BFA2009C5A31 /* FooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
 		F6103A612441C5BE009C5A31 /* PrettyPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyPrintable.swift; sourceTree = "<group>"; };
@@ -421,6 +444,9 @@
 		F638B2AB25ECC2BF00AD019F /* MarkDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownViewController.swift; sourceTree = "<group>"; };
 		F638B2AF25ECC3BB00AD019F /* PanNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanNavigationController.swift; sourceTree = "<group>"; };
 		F644C58225D5E4E5002A6EDA /* NumberInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberInputViewController.swift; sourceTree = "<group>"; };
+		F657578625F966BF00EB8D13 /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		F657578825F966BF00EB8D13 /* NumberView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberView.xib; sourceTree = "<group>"; };
+		F657579025F9676600EB8D13 /* Keyboard.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Keyboard.xcassets; sourceTree = "<group>"; };
 		F665C0CD25C6A41300D15C7E /* sadEmptyBox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sadEmptyBox.json; sourceTree = "<group>"; };
 		F66E29EC2449F4DD00E732B1 /* UISearchResultsUpdating+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchResultsUpdating+Rx.swift"; sourceTree = "<group>"; };
 		F66E29F32449F8D000E732B1 /* FilterListStateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterListStateViewModel.swift; sourceTree = "<group>"; };
@@ -682,9 +708,7 @@
 		F6C067BD243F4D9E00039897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C067BF243F4D9E00039897 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F6C067C1243F4D9E00039897 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F6C067C4243F4D9E00039897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6C067C6243F4D9E00039897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6C067C9243F4D9F00039897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6C067CB243F4D9F00039897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6C067D1243F4DBA00039897 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F6C067D3243F5E7900039897 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
@@ -714,6 +738,70 @@
 		F6DC98E4245AFFA100BE5265 /* Object+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ClassName.swift"; sourceTree = "<group>"; };
 		F6DC98E6245B147A00BE5265 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		F6DC9904245B428000BE5265 /* ChromaColorPicker+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChromaColorPicker+Rx.swift"; sourceTree = "<group>"; };
+		F6E6FB6425F8E27C00E82AFF /* add_plus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = add_plus.json; sourceTree = "<group>"; };
+		F6E6FB7825F8E43300E82AFF /* BartyCrouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartyCrouch.swift; sourceTree = "<group>"; };
+		F6E6FB9325F8E84A00E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F6E6FB9725F8E84E00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F6E6FBA025F8ECFC00E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/veget.plist; sourceTree = "<group>"; };
+		F6E6FBA125F8ECFC00E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/veget.plist; sourceTree = "<group>"; };
+		F6E6FBA225F8ECFC00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/veget.plist; sourceTree = "<group>"; };
+		F6E6FBAB25F8F19800E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/fish.plist; sourceTree = "<group>"; };
+		F6E6FBAF25F8F19C00E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/fish.plist; sourceTree = "<group>"; };
+		F6E6FBB025F8F1A000E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/fish.plist; sourceTree = "<group>"; };
+		F6E6FBB825F8F28500E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/meat.plist; sourceTree = "<group>"; };
+		F6E6FBBA25F8F28800E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/meat.plist; sourceTree = "<group>"; };
+		F6E6FBBB25F8F28C00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/meat.plist; sourceTree = "<group>"; };
+		F6E6FBC325F8F3B500E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/egg.plist; sourceTree = "<group>"; };
+		F6E6FBC725F8F3B800E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/egg.plist; sourceTree = "<group>"; };
+		F6E6FBC825F8F3B900E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/egg.plist; sourceTree = "<group>"; };
+		F6E6FBD025F8F50200E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/milk.plist; sourceTree = "<group>"; };
+		F6E6FBD425F8F50600E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/milk.plist; sourceTree = "<group>"; };
+		F6E6FBD525F8F50700E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/milk.plist; sourceTree = "<group>"; };
+		F6E6FBDD25F8F5C500E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/grain.plist; sourceTree = "<group>"; };
+		F6E6FBE125F8F5C900E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/grain.plist; sourceTree = "<group>"; };
+		F6E6FBE225F8F5CA00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/grain.plist; sourceTree = "<group>"; };
+		F6E6FBEA25F8F66F00E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/oilAndSpices.plist; sourceTree = "<group>"; };
+		F6E6FBEE25F8F67200E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/oilAndSpices.plist; sourceTree = "<group>"; };
+		F6E6FBEF25F8F67300E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/oilAndSpices.plist; sourceTree = "<group>"; };
+		F6E6FBF725F8F70400E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/bread.plist; sourceTree = "<group>"; };
+		F6E6FBFB25F8F70700E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/bread.plist; sourceTree = "<group>"; };
+		F6E6FBFC25F8F70800E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/bread.plist; sourceTree = "<group>"; };
+		F6E6FC0425F8F7B800E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/sweat.plist; sourceTree = "<group>"; };
+		F6E6FC0825F8F7BB00E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/sweat.plist; sourceTree = "<group>"; };
+		F6E6FC0925F8F7BD00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/sweat.plist; sourceTree = "<group>"; };
+		F6E6FC1125F8F8B600E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/cafe.plist; sourceTree = "<group>"; };
+		F6E6FC1525F8F8B900E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/cafe.plist; sourceTree = "<group>"; };
+		F6E6FC1625F8F8BC00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/cafe.plist; sourceTree = "<group>"; };
+		F6E6FC2025F8FB0700E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/drink.plist; sourceTree = "<group>"; };
+		F6E6FC2425F8FB0A00E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/drink.plist; sourceTree = "<group>"; };
+		F6E6FC2525F8FB0B00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/drink.plist; sourceTree = "<group>"; };
+		F6E6FC2D25F8FC8700E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/cosmetic.plist; sourceTree = "<group>"; };
+		F6E6FC3125F8FC8A00E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/cosmetic.plist; sourceTree = "<group>"; };
+		F6E6FC3225F8FC8B00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/cosmetic.plist; sourceTree = "<group>"; };
+		F6E6FC3A25F8FD7D00E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/pharmacy.plist; sourceTree = "<group>"; };
+		F6E6FC3E25F8FD8000E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/pharmacy.plist; sourceTree = "<group>"; };
+		F6E6FC3F25F8FD8100E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/pharmacy.plist; sourceTree = "<group>"; };
+		F6E6FC4725F8FDEF00E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/snack.plist; sourceTree = "<group>"; };
+		F6E6FC4B25F8FDF000E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/snack.plist; sourceTree = "<group>"; };
+		F6E6FC4E25F8FDF100E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/snack.plist; sourceTree = "<group>"; };
+		F6E6FC5625F8FE7500E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/other.plist; sourceTree = "<group>"; };
+		F6E6FC5A25F8FE7600E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/other.plist; sourceTree = "<group>"; };
+		F6E6FC5D25F8FE7700E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/other.plist; sourceTree = "<group>"; };
+		F6E6FC6525F8FFD100E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/clothes.plist; sourceTree = "<group>"; };
+		F6E6FC6925F8FFD300E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/clothes.plist; sourceTree = "<group>"; };
+		F6E6FC6C25F8FFD400E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/clothes.plist; sourceTree = "<group>"; };
+		F6E6FC7425F9005400E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/furniture.plist; sourceTree = "<group>"; };
+		F6E6FC7825F9005500E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/furniture.plist; sourceTree = "<group>"; };
+		F6E6FC7925F9005600E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/furniture.plist; sourceTree = "<group>"; };
+		F6E6FC8125F900BB00E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/repair.plist; sourceTree = "<group>"; };
+		F6E6FC8525F900BC00E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/repair.plist; sourceTree = "<group>"; };
+		F6E6FC8825F900BD00E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = ru.lproj/repair.plist; sourceTree = "<group>"; };
+		F6E6FC8C25F903E300E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6E6FC9125F903E800E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F6E6FC9325F903E900E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F6E6FC9525F903EF00E82AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6E6FC9A25F903F300E82AFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F6E6FC9B25F903F300E82AFF /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6F2685E244F57E0005B7336 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		F6F26860244FA4A0005B7336 /* AddProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProductCell.xib; sourceTree = "<group>"; };
 		F6F26862244FA555005B7336 /* AddProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductCell.swift; sourceTree = "<group>"; };
@@ -746,6 +834,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CADA8925F9458D00FAF37A /* Localize_Swift in Frameworks */,
 				940DA8C2D3D9BC0B6E161BEF /* Pods_Shlist.framework in Frameworks */,
 				F638B2B725ECE50900AD019F /* Ink in Frameworks */,
 			);
@@ -777,6 +866,7 @@
 		F60BB70C25F39166008B7A75 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F657578525F966BF00EB8D13 /* NumberView */,
 				F60BB70D25F3916B008B7A75 /* ToastView */,
 			);
 			path = Views;
@@ -794,7 +884,7 @@
 		F625B8EA25B429150088F397 /* Lottie JSON */ = {
 			isa = PBXGroup;
 			children = (
-				F60BB74325F402A4008B7A75 /* add_plus.json */,
+				F6E6FB6425F8E27C00E82AFF /* add_plus.json */,
 				F60BB73725F3AD55008B7A75 /* add.json */,
 				F60DFFE125C6B06B000F4597 /* newSadBag.json */,
 				F665C0CD25C6A41300D15C7E /* sadEmptyBox.json */,
@@ -847,6 +937,16 @@
 				F638B2AF25ECC3BB00AD019F /* PanNavigationController.swift */,
 			);
 			path = MarkDownViewController;
+			sourceTree = "<group>";
+		};
+		F657578525F966BF00EB8D13 /* NumberView */ = {
+			isa = PBXGroup;
+			children = (
+				F657579025F9676600EB8D13 /* Keyboard.xcassets */,
+				F657578625F966BF00EB8D13 /* NumberView.swift */,
+				F657578825F966BF00EB8D13 /* NumberView.xib */,
+			);
+			path = NumberView;
 			sourceTree = "<group>";
 		};
 		F66E29EE2449F59600E732B1 /* Rx+Ext */ = {
@@ -1536,6 +1636,11 @@
 		F6C067BC243F4D9E00039897 /* Shlist */ = {
 			isa = PBXGroup;
 			children = (
+				F6E6FB9E25F8ECFC00E82AFF /* Data_plist */,
+				F6E6FB9A25F8EBB600E82AFF /* Barty */,
+				F6E6FB9425F8E84A00E82AFF /* Localizable.strings */,
+				F6E6FC8D25F903E300E82AFF /* LaunchScreen.storyboard */,
+				F6E6FC9625F903EF00E82AFF /* Main.storyboard */,
 				F67B4A73245886D700ADC2E6 /* SwiftyImage.playground */,
 				F6C067CB243F4D9F00039897 /* Info.plist */,
 				F6C5CF4925CCD81C00C24986 /* icon-doc.png */,
@@ -1551,9 +1656,7 @@
 				F60705342441E2A700F21E45 /* ButtonView.xib */,
 				F6C067E9243F9D8600039897 /* Cells */,
 				F6C067D5243F5EC300039897 /* Controllers */,
-				F6C067C8243F4D9F00039897 /* LaunchScreen.storyboard */,
 				F625B8EA25B429150088F397 /* Lottie JSON */,
-				F6C067C3243F4D9E00039897 /* Main.storyboard */,
 				F6C067D6243F5ED300039897 /* Model */,
 				F6C067DB243F870300039897 /* Protocols */,
 				F6C067F92440C04800039897 /* Style+Settings */,
@@ -1674,6 +1777,39 @@
 			path = FluidHighlighter;
 			sourceTree = "<group>";
 		};
+		F6E6FB9A25F8EBB600E82AFF /* Barty */ = {
+			isa = PBXGroup;
+			children = (
+				F6E6FB7825F8E43300E82AFF /* BartyCrouch.swift */,
+			);
+			path = Barty;
+			sourceTree = "<group>";
+		};
+		F6E6FB9E25F8ECFC00E82AFF /* Data_plist */ = {
+			isa = PBXGroup;
+			children = (
+				F6E6FC2125F8FB0700E82AFF /* drink.plist */,
+				F6E6FBC425F8F3B500E82AFF /* egg.plist */,
+				F6E6FBB925F8F28500E82AFF /* meat.plist */,
+				F6E6FBAC25F8F19800E82AFF /* fish.plist */,
+				F6E6FB9F25F8ECFC00E82AFF /* veget.plist */,
+				F6E6FBD125F8F50200E82AFF /* milk.plist */,
+				F6E6FBDE25F8F5C500E82AFF /* grain.plist */,
+				F6E6FBEB25F8F66F00E82AFF /* oilAndSpices.plist */,
+				F6E6FBF825F8F70400E82AFF /* bread.plist */,
+				F6E6FC0525F8F7B800E82AFF /* sweat.plist */,
+				F6E6FC1225F8F8B600E82AFF /* cafe.plist */,
+				F6E6FC2E25F8FC8700E82AFF /* cosmetic.plist */,
+				F6E6FC3B25F8FD7D00E82AFF /* pharmacy.plist */,
+				F6E6FC4825F8FDEF00E82AFF /* snack.plist */,
+				F6E6FC5725F8FE7500E82AFF /* other.plist */,
+				F6E6FC6625F8FFD100E82AFF /* clothes.plist */,
+				F6E6FC7525F9005400E82AFF /* furniture.plist */,
+				F6E6FC8225F900BB00E82AFF /* repair.plist */,
+			);
+			path = Data_plist;
+			sourceTree = "<group>";
+		};
 		F6F2686A24502E04005B7336 /* UIBezierPath+Pixel+Ext */ = {
 			isa = PBXGroup;
 			children = (
@@ -1735,6 +1871,7 @@
 			buildConfigurationList = F6C067CE243F4D9F00039897 /* Build configuration list for PBXNativeTarget "Shlist" */;
 			buildPhases = (
 				6B76B44037C6AA87B69D29EF /* [CP] Check Pods Manifest.lock */,
+				F6E6FB9B25F8EC0B00E82AFF /* ShellScript */,
 				F6C067B6243F4D9E00039897 /* Sources */,
 				F6C067B7243F4D9E00039897 /* Frameworks */,
 				F6C067B8243F4D9E00039897 /* Resources */,
@@ -1747,6 +1884,7 @@
 			name = Shlist;
 			packageProductDependencies = (
 				F638B2B625ECE50900AD019F /* Ink */,
+				F6CADA8825F9458D00FAF37A /* Localize_Swift */,
 			);
 			productName = Shlist;
 			productReference = F6C067BA243F4D9E00039897 /* Shlist.app */;
@@ -1777,11 +1915,13 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 				Base,
 			);
 			mainGroup = F6C067B1243F4D9E00039897;
 			packageReferences = (
 				F638B2B525ECE50900AD019F /* XCRemoteSwiftPackageReference "ink" */,
+				F6CADA8725F9458D00FAF37A /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 			);
 			productRefGroup = F6C067BB243F4D9E00039897 /* Products */;
 			projectDirPath = "";
@@ -1806,20 +1946,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66FF2DD245126230006B2A9 /* mono-blue.min.css in Resources */,
+				F6E6FC1F25F8FB0700E82AFF /* drink.plist in Resources */,
 				F66FF2D7245126230006B2A9 /* shades-of-purple.min.css in Resources */,
 				F66FF2EB245126230006B2A9 /* obsidian.min.css in Resources */,
 				F66FF30F245126230006B2A9 /* googlecode.min.css in Resources */,
-				F6C067CA243F4D9F00039897 /* LaunchScreen.storyboard in Resources */,
 				F66FF304245126230006B2A9 /* atelier-sulphurpool-light.min.css in Resources */,
+				F657579125F9676600EB8D13 /* Keyboard.xcassets in Resources */,
 				F66FF319245126230006B2A9 /* darcula.min.css in Resources */,
 				F66FF2E4245126230006B2A9 /* atelier-savanna-dark.min.css in Resources */,
 				F62D64CB2451D27F00EC24D0 /* IconCollectionViewCell.xib in Resources */,
 				F66FF2D9245126230006B2A9 /* railscasts.min.css in Resources */,
+				F6E6FC1025F8F8B600E82AFF /* cafe.plist in Resources */,
 				F66FF2CC245126230006B2A9 /* tomorrow-night-blue.min.css in Resources */,
 				F60BB70F25F39184008B7A75 /* ToastView.xib in Resources */,
 				F66FF2D1245126230006B2A9 /* qtcreator_light.min.css in Resources */,
 				F66FF30E245126230006B2A9 /* atelier-estuary-dark.min.css in Resources */,
 				F66FF2D5245126230006B2A9 /* far.min.css in Resources */,
+				F6E6FBAA25F8F19800E82AFF /* fish.plist in Resources */,
+				F6E6FBF625F8F70400E82AFF /* bread.plist in Resources */,
 				F66FF2CD245126230006B2A9 /* vs2015.min.css in Resources */,
 				F66FF318245126230006B2A9 /* hybrid.min.css in Resources */,
 				F60705352441E2A700F21E45 /* ButtonView.xib in Resources */,
@@ -1831,6 +1975,8 @@
 				F66FF2E6245126230006B2A9 /* pojoaque.min.css in Resources */,
 				F66FF2FB245126230006B2A9 /* dark.min.css in Resources */,
 				F66FF303245126230006B2A9 /* a11y-dark.min.css in Resources */,
+				F6E6FC6425F8FFD100E82AFF /* clothes.plist in Resources */,
+				F6E6FBA325F8ECFC00E82AFF /* veget.plist in Resources */,
 				F6C067FE2440C06300039897 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				F66FF310245126230006B2A9 /* atom-one-dark-reasonable.min.css in Resources */,
 				F66FF30C245126230006B2A9 /* foundation.min.css in Resources */,
@@ -1842,25 +1988,31 @@
 				F66FF301245126230006B2A9 /* isbl-editor-light.min.css in Resources */,
 				F66FF2E0245126230006B2A9 /* atelier-seaside-light.min.css in Resources */,
 				F6C067C7243F4D9E00039897 /* Assets.xcassets in Resources */,
+				F6E6FBC225F8F3B500E82AFF /* egg.plist in Resources */,
 				F66FF30D245126230006B2A9 /* codepen-embed.min.css in Resources */,
 				F66FF2CA245126230006B2A9 /* xcode.min.css in Resources */,
 				F6F26865244FA709005B7336 /* SwitchCell.xib in Resources */,
+				F6E6FBDC25F8F5C500E82AFF /* grain.plist in Resources */,
 				F66FF2FA245126230006B2A9 /* nord.min.css in Resources */,
 				F66FF2CF245126230006B2A9 /* paraiso-light.min.css in Resources */,
 				F66FF2D8245126230006B2A9 /* kimbie.light.min.css in Resources */,
 				F66FF311245126230006B2A9 /* atelier-dune-light.min.css in Resources */,
+				F657578B25F966BF00EB8D13 /* NumberView.xib in Resources */,
 				F66FF2DC245126230006B2A9 /* xt256.min.css in Resources */,
 				F66FF2CB245126230006B2A9 /* atelier-sulphurpool-dark.min.css in Resources */,
 				F625B8AB25B426180088F397 /* ProductCellNew.xib in Resources */,
 				F66FF2EA245126230006B2A9 /* tomorrow-night.min.css in Resources */,
 				F66FF2DA245126230006B2A9 /* solarized-dark.min.css in Resources */,
 				F66FF2ED245126230006B2A9 /* atelier-lakeside-dark.min.css in Resources */,
+				F6E6FC0325F8F7B800E82AFF /* sweat.plist in Resources */,
 				F66FF2D3245126230006B2A9 /* kimbie.dark.min.css in Resources */,
 				F66FF313245126230006B2A9 /* zenburn.min.css in Resources */,
+				F6E6FC4625F8FDEF00E82AFF /* snack.plist in Resources */,
 				F66FF2D6245126230006B2A9 /* atelier-dune-dark.min.css in Resources */,
 				F66FF2F5245126230006B2A9 /* magula.min.css in Resources */,
 				F66FF300245126230006B2A9 /* ascetic.min.css in Resources */,
 				F66FF2F4245126230006B2A9 /* dracula.min.css in Resources */,
+				F6E6FC2C25F8FC8700E82AFF /* cosmetic.plist in Resources */,
 				F66FF30B245126230006B2A9 /* atelier-savanna-light.min.css in Resources */,
 				F66FF306245126230006B2A9 /* darkula.min.css in Resources */,
 				F66FF31A245126230006B2A9 /* atelier-lakeside-light.min.css in Resources */,
@@ -1869,10 +2021,10 @@
 				F66FF2F9245126230006B2A9 /* github.min.css in Resources */,
 				F6C067D2243F4DBA00039897 /* Podfile in Resources */,
 				F66FF317245126230006B2A9 /* agate.min.css in Resources */,
+				F6E6FBB725F8F28500E82AFF /* meat.plist in Resources */,
 				F66FF2C7245126230006B2A9 /* brown-paper.min.css in Resources */,
 				F60BB73825F3AD56008B7A75 /* add.json in Resources */,
 				F66FF314245126230006B2A9 /* androidstudio.min.css in Resources */,
-				F6C067C5243F4D9E00039897 /* Main.storyboard in Resources */,
 				F66FF2CE245126230006B2A9 /* atelier-heath-dark.min.css in Resources */,
 				F66FF31B245126230006B2A9 /* monokai-sublime.min.css in Resources */,
 				F66FF2EE245126230006B2A9 /* gruvbox-light.min.css in Resources */,
@@ -1888,12 +2040,16 @@
 				F66FF2FC245126230006B2A9 /* atom-one-light.min.css in Resources */,
 				F66FF2D0245126230006B2A9 /* rainbow.min.css in Resources */,
 				F67B4A492458247200ADC2E6 /* HeaderReusableView.xib in Resources */,
+				F6E6FC9425F903EF00E82AFF /* Main.storyboard in Resources */,
 				F60DFFE225C6B06B000F4597 /* newSadBag.json in Resources */,
 				F62EE91C244E255800B7CB3F /* NewProductCell.xib in Resources */,
+				F6E6FC7325F9005400E82AFF /* furniture.plist in Resources */,
 				F66FF316245126230006B2A9 /* sunburst.min.css in Resources */,
 				F66FF2F8245126230006B2A9 /* hopscotch.min.css in Resources */,
 				F6C067FD2440C06300039897 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				F665C0CE25C6A41300D15C7E /* sadEmptyBox.json in Resources */,
+				F6E6FBE925F8F66F00E82AFF /* oilAndSpices.plist in Resources */,
+				F6E6FBCF25F8F50200E82AFF /* milk.plist in Resources */,
 				F6A6D25C25CF147A009046FD /* InputDialogView.xib in Resources */,
 				F66FF2DF245126230006B2A9 /* github-gist.min.css in Resources */,
 				F66FF308245126230006B2A9 /* ir-black.min.css in Resources */,
@@ -1902,6 +2058,7 @@
 				F66FF307245126230006B2A9 /* atelier-cave-dark.min.css in Resources */,
 				F66FF2C8245126230006B2A9 /* atelier-plateau-light.min.css in Resources */,
 				F66FF309245126230006B2A9 /* solarized-light.min.css in Resources */,
+				F6E6FC8025F900BB00E82AFF /* repair.plist in Resources */,
 				F66FF305245126230006B2A9 /* atelier-plateau-dark.min.css in Resources */,
 				F66FF2E9245126230006B2A9 /* gml.min.css in Resources */,
 				F62EE91E244E271900B7CB3F /* NewProductHeader.xib in Resources */,
@@ -1910,12 +2067,16 @@
 				F66FF2E7245126230006B2A9 /* routeros.min.css in Resources */,
 				F66FF31C245126230006B2A9 /* an-old-hope.min.css in Resources */,
 				F66FF2F6245126230006B2A9 /* arta.min.css in Resources */,
-				F60BB74425F402A4008B7A75 /* add_plus.json in Resources */,
+				F6E6FB6525F8E27C00E82AFF /* add_plus.json in Resources */,
+				F6E6FC8B25F903E300E82AFF /* LaunchScreen.storyboard in Resources */,
 				F66FF312245126230006B2A9 /* paraiso-dark.min.css in Resources */,
+				F6E6FC5525F8FE7500E82AFF /* other.plist in Resources */,
 				F6A6D34125D1104C009046FD /* NumberInputView.xib in Resources */,
 				F6F26861244FA4A0005B7336 /* AddProductCell.xib in Resources */,
+				F6E6FB9225F8E84A00E82AFF /* Localizable.strings in Resources */,
 				F625B8EC25B429280088F397 /* checkBox.json in Resources */,
 				F66FF2E5245126230006B2A9 /* color-brewer.min.css in Resources */,
+				F6E6FC3925F8FD7D00E82AFF /* pharmacy.plist in Resources */,
 				F66FF2D4245126230006B2A9 /* atelier-heath-light.min.css in Resources */,
 				F66FF2F1245126230006B2A9 /* atelier-forest-light.min.css in Resources */,
 				F66FF30A245126230006B2A9 /* tomorrow-night-bright.min.css in Resources */,
@@ -2004,6 +2165,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F6E6FB9B25F8EC0B00E82AFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which bartycrouch > /dev/null; then\n    bartycrouch update -x\n    bartycrouch lint -x\nelse\n    echo \"warning: BartyCrouch not installed, download it from https://github.com/Flinesoft/BartyCrouch\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2039,6 +2217,7 @@
 				F66FF22A245043CB0006B2A9 /* SelectedCategoryDataSourceProtocol.swift in Sources */,
 				F62D64A02451B30600EC24D0 /* CategorySelectViewController.swift in Sources */,
 				F6A7D368246ED85600EA320C /* UIImage+LLDBQuickLook.m in Sources */,
+				F657578925F966BF00EB8D13 /* NumberView.swift in Sources */,
 				F60BB71325F39249008B7A75 /* ToastView.swift in Sources */,
 				F6732D4F25C56A2C00080D99 /* LocaleInfo.swift in Sources */,
 				F6732D6A25C56A2D00080D99 /* Label.swift in Sources */,
@@ -2165,6 +2344,7 @@
 				F6A7D386246EE25900EA320C /* Stevia+Fill.swift in Sources */,
 				F66FF31E245126230006B2A9 /* Theme.swift in Sources */,
 				F638B26E25ECA6F300AD019F /* MarkdownHeader.swift in Sources */,
+				F6E6FB7925F8E43300E82AFF /* BartyCrouch.swift in Sources */,
 				F62D64CD2451D47D00EC24D0 /* IconTypeWrapper.swift in Sources */,
 				F638B27625ECA6F300AD019F /* MarkdownFile.swift in Sources */,
 				F625B8AF25B426B50088F397 /* ProductCellNew.swift in Sources */,
@@ -2262,20 +2442,213 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F6C067C3243F4D9E00039897 /* Main.storyboard */ = {
+		F6E6FB9425F8E84A00E82AFF /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F6C067C4243F4D9E00039897 /* Base */,
+				F6E6FB9325F8E84A00E82AFF /* en */,
+				F6E6FB9725F8E84E00E82AFF /* ru */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		F6C067C8243F4D9F00039897 /* LaunchScreen.storyboard */ = {
+		F6E6FB9F25F8ECFC00E82AFF /* veget.plist */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F6C067C9243F4D9F00039897 /* Base */,
+				F6E6FBA025F8ECFC00E82AFF /* en */,
+				F6E6FBA125F8ECFC00E82AFF /* Base */,
+				F6E6FBA225F8ECFC00E82AFF /* ru */,
+			);
+			name = veget.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FBAC25F8F19800E82AFF /* fish.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FBAB25F8F19800E82AFF /* Base */,
+				F6E6FBAF25F8F19C00E82AFF /* en */,
+				F6E6FBB025F8F1A000E82AFF /* ru */,
+			);
+			name = fish.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FBB925F8F28500E82AFF /* meat.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FBB825F8F28500E82AFF /* Base */,
+				F6E6FBBA25F8F28800E82AFF /* en */,
+				F6E6FBBB25F8F28C00E82AFF /* ru */,
+			);
+			name = meat.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FBC425F8F3B500E82AFF /* egg.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FBC325F8F3B500E82AFF /* Base */,
+				F6E6FBC725F8F3B800E82AFF /* en */,
+				F6E6FBC825F8F3B900E82AFF /* ru */,
+			);
+			name = egg.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FBD125F8F50200E82AFF /* milk.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FBD025F8F50200E82AFF /* Base */,
+				F6E6FBD425F8F50600E82AFF /* en */,
+				F6E6FBD525F8F50700E82AFF /* ru */,
+			);
+			name = milk.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FBDE25F8F5C500E82AFF /* grain.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FBDD25F8F5C500E82AFF /* Base */,
+				F6E6FBE125F8F5C900E82AFF /* en */,
+				F6E6FBE225F8F5CA00E82AFF /* ru */,
+			);
+			name = grain.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FBEB25F8F66F00E82AFF /* oilAndSpices.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FBEA25F8F66F00E82AFF /* Base */,
+				F6E6FBEE25F8F67200E82AFF /* en */,
+				F6E6FBEF25F8F67300E82AFF /* ru */,
+			);
+			name = oilAndSpices.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FBF825F8F70400E82AFF /* bread.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FBF725F8F70400E82AFF /* Base */,
+				F6E6FBFB25F8F70700E82AFF /* en */,
+				F6E6FBFC25F8F70800E82AFF /* ru */,
+			);
+			name = bread.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC0525F8F7B800E82AFF /* sweat.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC0425F8F7B800E82AFF /* Base */,
+				F6E6FC0825F8F7BB00E82AFF /* en */,
+				F6E6FC0925F8F7BD00E82AFF /* ru */,
+			);
+			name = sweat.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC1225F8F8B600E82AFF /* cafe.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC1125F8F8B600E82AFF /* Base */,
+				F6E6FC1525F8F8B900E82AFF /* en */,
+				F6E6FC1625F8F8BC00E82AFF /* ru */,
+			);
+			name = cafe.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC2125F8FB0700E82AFF /* drink.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC2025F8FB0700E82AFF /* Base */,
+				F6E6FC2425F8FB0A00E82AFF /* en */,
+				F6E6FC2525F8FB0B00E82AFF /* ru */,
+			);
+			name = drink.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC2E25F8FC8700E82AFF /* cosmetic.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC2D25F8FC8700E82AFF /* Base */,
+				F6E6FC3125F8FC8A00E82AFF /* en */,
+				F6E6FC3225F8FC8B00E82AFF /* ru */,
+			);
+			name = cosmetic.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC3B25F8FD7D00E82AFF /* pharmacy.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC3A25F8FD7D00E82AFF /* Base */,
+				F6E6FC3E25F8FD8000E82AFF /* en */,
+				F6E6FC3F25F8FD8100E82AFF /* ru */,
+			);
+			name = pharmacy.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC4825F8FDEF00E82AFF /* snack.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC4725F8FDEF00E82AFF /* Base */,
+				F6E6FC4B25F8FDF000E82AFF /* en */,
+				F6E6FC4E25F8FDF100E82AFF /* ru */,
+			);
+			name = snack.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC5725F8FE7500E82AFF /* other.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC5625F8FE7500E82AFF /* Base */,
+				F6E6FC5A25F8FE7600E82AFF /* en */,
+				F6E6FC5D25F8FE7700E82AFF /* ru */,
+			);
+			name = other.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC6625F8FFD100E82AFF /* clothes.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC6525F8FFD100E82AFF /* Base */,
+				F6E6FC6925F8FFD300E82AFF /* en */,
+				F6E6FC6C25F8FFD400E82AFF /* ru */,
+			);
+			name = clothes.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC7525F9005400E82AFF /* furniture.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC7425F9005400E82AFF /* Base */,
+				F6E6FC7825F9005500E82AFF /* en */,
+				F6E6FC7925F9005600E82AFF /* ru */,
+			);
+			name = furniture.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC8225F900BB00E82AFF /* repair.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC8125F900BB00E82AFF /* Base */,
+				F6E6FC8525F900BC00E82AFF /* en */,
+				F6E6FC8825F900BD00E82AFF /* ru */,
+			);
+			name = repair.plist;
+			sourceTree = "<group>";
+		};
+		F6E6FC8D25F903E300E82AFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC8C25F903E300E82AFF /* Base */,
+				F6E6FC9125F903E800E82AFF /* en */,
+				F6E6FC9325F903E900E82AFF /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F6E6FC9625F903EF00E82AFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E6FC9525F903EF00E82AFF /* Base */,
+				F6E6FC9A25F903F300E82AFF /* en */,
+				F6E6FC9B25F903F300E82AFF /* ru */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2327,6 +2700,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2387,6 +2761,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2444,14 +2819,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = LR2T8ARWWC;
 				INFOPLIST_FILE = Shlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.07;
+				MARKETING_VERSION = 1.09;
 				PRODUCT_BUNDLE_IDENTIFIER = point.Shlist.exp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2468,14 +2843,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = LR2T8ARWWC;
 				INFOPLIST_FILE = Shlist/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.07;
+				MARKETING_VERSION = 1.09;
 				PRODUCT_BUNDLE_IDENTIFIER = point.Shlist.exp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2526,6 +2901,14 @@
 				minimumVersion = 0.5.0;
 			};
 		};
+		F6CADA8725F9458D00FAF37A /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Localize-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2533,6 +2916,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F638B2B525ECE50900AD019F /* XCRemoteSwiftPackageReference "ink" */;
 			productName = Ink;
+		};
+		F6CADA8825F9458D00FAF37A /* Localize_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6CADA8725F9458D00FAF37A /* XCRemoteSwiftPackageReference "Localize-Swift" */;
+			productName = Localize_Swift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

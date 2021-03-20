@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Торт 🎂</string>
+    <string>Шоколад 🍫</string>
+    <string>Конфеты 🍬</string>
+    <string>Мороженое🍦</string>
+    <string>Мёд 🍯</string>
+    <string>Пирожное 🍮</string>
+    <string>Печенье 🍪</string>
+    <string>Кекс 🥮</string>
+    <string>Мармелад</string>
+    <string>Зефир</string>
+    <string>Ирис</string>
+    <string>Карамель</string>
+    <string>Кекс шоколадный</string>
+    <string>Крекер</string>
+    <string>Печенье овсяное</string>
+    <string>Халва</string>
+    <string>Аспартам</string>
+    <string>Сахар</string>
+    <string>Сахар коричневый</string>
+    <string>Сахарин</string>
+    <string>Стевия (сахарозаменитель)</string>
+    <string>Фруктоза</string>
+    <string>Шоколад тёмный (70-85% какао)</string>
+    <string>Шоколадный батончик</string>
+</array>
+</plist>
+

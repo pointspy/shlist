@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Water 💧 </string>
+	<string>💧 Mineral water</string>
+	<string>Juice 🧃</string>
+	<string>Coconut milk</string>
+	<string>cranberry</string>
+	<string>apricot Juice (nectar)</string>
+	<string>Juice 🧃 orange</string>
+	<string>grape Juice 🧃</string>
+	<string>pomegranate Juice 🧃</string>
+	<string>grapefruit Juice 🧃</string>
+	<string>pear Juice 🧃 (nectar)</string>
+	<string>lime Juice 🧃</string>
+	<string>lemon Juice 🧃</string>
+	<string>Juice 🧃 mango (nectar)</string>
+	<string>Juice 🧃 peach (nectar)</string>
+	<string>Juice 🧃 Apple</string>
+	<string>Coca-Cola 🥤 </string>
+	<string>Coffee</string>
+	<string>Chicory</string>
+	<string>Tea 🍵 </string>
+	<string>🍵 green Tea</string>
+	<string>Tea 🍵 black</string>
+	<string>Energy drink</string>
+	<string>🍷 Wine</string>
+	<string>Wine 🍷 white</string>
+	<string>Wine red 🍷 </string>
+	<string>Wine 🍷 pink</string>
+	<string>Whiskey 🥃 </string>
+	<string>Vodka</string>
+	<string>gin</string>
+	<string>Beer 🍺 </string>
+	<string>Rum</string>
+	<string>Sake 🍶 </string>
+	<string>Martini 🍸 </string>
+	<string>Champagne 🍾 </string>
+</array>
+</plist>

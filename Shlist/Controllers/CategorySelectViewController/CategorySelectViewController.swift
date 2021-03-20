@@ -24,7 +24,7 @@ final class CategorySelectViewController: UIViewController {
             switch dataSource.sectionModels[indexPath.section].type {
             case .addNewProductChooseCategoryHeader:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                    cell.titleLabel.text = "Укажите категорию"
+                    cell.titleLabel.text = NSLocalizedString("ResultsTableViewController.SelectCategory", comment: "")
                     cell.setUp()
                     cell.selectionStyle = .none
                     
@@ -79,7 +79,7 @@ final class CategorySelectViewController: UIViewController {
     
     public private(set) var disposeBag = DisposeBag()
     
-    lazy var doneBarButton: UIBarButtonItem = UIBarButtonItem(title: "Готово", style: .plain, handler: {
+    lazy var doneBarButton: UIBarButtonItem = UIBarButtonItem(title: "\(NSLocalizedString("common.done", comment: ""))", style: .plain, handler: {
         self.dismiss(animated: true, completion: nil)
     })
     

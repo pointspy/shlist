@@ -34,7 +34,7 @@ final class NumberInputView: UIView {
     }
     
     override var intrinsicContentSize: CGSize {
-        return CGSize.init(width: self.size.width, height: 350.0)
+        return CGSize.init(width: UIScreen.main.bounds.width, height: 350.0)
     }
     
     func setup() {
@@ -43,14 +43,20 @@ final class NumberInputView: UIView {
         sumField.minValue = 0
         sumField.hideStepper(hide: true)
         
+        quantityField.minValue = 1
+        
         doneButton.setBackgroundColor(Settings.Colors.blue, for: .normal)
         doneButton.layer.cornerRadius = 10
         doneButton.layer.masksToBounds = true
         
-        sumField.keyboardType = .asciiCapableNumberPad
-        quantityField.keyboardType = .asciiCapableNumberPad
+//        sumField.keyboardType = .asciiCapableNumberPad
+//        quantityField.keyboardType = .asciiCapableNumberPad
         backgroundColor = .clear
+        quantityLabel.text = NSLocalizedString("common.quantity", comment: "")
+        sumLabel.text = NSLocalizedString("common.sum", comment: "")
+        doneButton.setTitle(NSLocalizedString("common.save", comment: ""), for: .normal)
         
-        
+        sumField.inputView = NumberView.shared
+        quantityField.inputView = NumberView.shared
     }
 }

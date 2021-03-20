@@ -9,10 +9,10 @@
 import Reusable
 import RxCocoa
 import RxDataSources
-import RxSwift
-import UIKit
 import RxKeyboard
+import RxSwift
 import SwiftEntryKit
+import UIKit
 
 final class ResultsTableViewController: UIViewController {
     lazy var tableView = UITableView()
@@ -37,7 +37,7 @@ final class ResultsTableViewController: UIViewController {
                 
                 // NewProductHeader
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                    cell.titleLabel.text = "Найдено"
+                    cell.titleLabel.text = NSLocalizedString("ResultsTableViewController.Found", comment: "")
                     cell.setUp()
                     cell.selectionStyle = .none
                     
@@ -51,7 +51,7 @@ final class ResultsTableViewController: UIViewController {
                 
             case .lastSearchHeader:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                    cell.titleLabel.text = "Последние"
+                    cell.titleLabel.text = NSLocalizedString("ResultsTableViewController.Last", comment: "")
                     cell.setUp()
                     cell.selectionStyle = .none
                     
@@ -62,7 +62,7 @@ final class ResultsTableViewController: UIViewController {
                 return self.factoryProductCell(for: item, indexPath: indexPath, dataSource: dataSource)
             case .addNewProductHeader:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                    cell.titleLabel.text = "Добавить"
+                    cell.titleLabel.text = NSLocalizedString("ResultsTableViewController.AddNew", comment: "")
                     cell.setUp()
                     cell.selectionStyle = .none
                     
@@ -116,7 +116,7 @@ final class ResultsTableViewController: UIViewController {
                 return UITableViewCell()
             case .addNewProductChooseCategoryHeader:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                    cell.titleLabel.text = "Укажите категорию"
+                    cell.titleLabel.text = NSLocalizedString("ResultsTableViewController.SelectCategory", comment: "")
                     cell.setUp()
                     cell.selectionStyle = .none
                     
@@ -128,7 +128,7 @@ final class ResultsTableViewController: UIViewController {
                 
             case .addNewProductSettingsHeader:
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductHeader", for: indexPath) as? NewProductHeader {
-                    cell.titleLabel.text = "Настройки"
+                    cell.titleLabel.text = NSLocalizedString("common.options", comment: "")
                     cell.setUp()
                     cell.selectionStyle = .none
                     
@@ -149,7 +149,7 @@ final class ResultsTableViewController: UIViewController {
             default:
                 return UITableViewCell()
             }
-    })
+        })
     
     private func factoryProductCellSelectCategory(for item: Product, indexPath: IndexPath, dataSource: TableViewSectionedDataSource<SectionOfProducts>) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewProductCell", for: indexPath) as? NewProductCell else { return UITableViewCell() }
@@ -194,10 +194,9 @@ final class ResultsTableViewController: UIViewController {
         
         cell.nameLabel.text = item.name
         
-        self.viewModel.input.searchPhrase.asDriver()
+        viewModel.input.searchPhrase.asDriver()
             .drive(cell.searchRelay)
             .disposed(by: cell.disposeBag)
-        
         
         let options: ProductCellOptions = [.single]
         
@@ -224,15 +223,15 @@ final class ResultsTableViewController: UIViewController {
                     
                     let attrMessage = "\(item.name)".at.attributed {
                         $0.font(.boldSystemFont(ofSize: 15)).lineSpacing(5).alignment(.center)
-                    } + "\nТовар добавлен".at.attributed {
+                    } + "\n\(NSLocalizedString("ResultsTableViewController.toast.addLabel", comment: ""))".at.attributed {
                         $0.font(.systemFont(ofSize: 13)).foreground(color: UIColor.secondaryLabel).lineSpacing(5).alignment(.center)
                     }
                     let toast = ToastView(attrMessage: attrMessage)
                     SwiftEntryKit.display(entry: toast, using: ToastView.bottomFloatAttributes(keyboardHeight: keyboardHeight))
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400), execute: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300)) {
                         toast.play()
-                    })
+                    }
                     
                     if let text = svc.searchBar.text, !text.isEmpty {
                         svc.searchBar.text = ""
@@ -265,6 +264,7 @@ final class ResultsTableViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -282,7 +282,7 @@ final class ResultsTableViewController: UIViewController {
         view.addSubview(tableView)
         tableView.frame = view.bounds
         
-        if self.view.traitCollection.userInterfaceStyle == .dark {
+        if view.traitCollection.userInterfaceStyle == .dark {
             Settings.Colors.themeService.switch(.dark)
         } else {
             Settings.Colors.themeService.switch(.light)
@@ -290,11 +290,11 @@ final class ResultsTableViewController: UIViewController {
         
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.clear
-        view.backgroundColor = self.traitCollection.userInterfaceStyle == .dark ? UIColor.systemBackground : .secondarySystemBackground
+        view.backgroundColor = traitCollection.userInterfaceStyle == .dark ? UIColor.systemBackground : .secondarySystemBackground
         
         Settings.Colors.themeService.rx
-            .bind({ $0.backgroundColor }, to: self.view.rx.backgroundColor, self.tableView.rx.backgroundColor)
-            .disposed(by: self.disposeBag)
+            .bind({ $0.backgroundColor }, to: view.rx.backgroundColor, tableView.rx.backgroundColor)
+            .disposed(by: disposeBag)
         
         tableView.rx.setDelegate(self)
             .disposed(by: disposeBag)
@@ -325,7 +325,7 @@ final class ResultsTableViewController: UIViewController {
     }
     
     @objc func hideKeyboard() {
-        guard let svc = self.searchController, let searchText = svc.searchBar.text, !searchText.isEmpty else { return }
+        guard let svc = searchController, let searchText = svc.searchBar.text, !searchText.isEmpty else { return }
         
         svc.searchBar.resignFirstResponder()
     }
@@ -342,14 +342,14 @@ extension ResultsTableViewController {
             } else {
                 Settings.Colors.themeService.switch(Settings.Colors.ThemeType.light)
             }
-            self.view.backgroundColor = .systemBackground
+            view.backgroundColor = .systemBackground
         }
     }
 }
 
 extension ResultsTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch self.animatedDataSource.sectionModels[indexPath.section].type {
+        switch animatedDataSource.sectionModels[indexPath.section].type {
         case .lastSearchHeader, .currentSearchHeader:
             
             return 50.0
@@ -369,8 +369,14 @@ extension ResultsTableViewController: UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard let svc = self.searchController/*, let searchText = svc.searchBar.text, !searchText.isEmpty*/ else { return }
+        guard let svc = searchController /* , let searchText = svc.searchBar.text, !searchText.isEmpty */ else { return }
         
         svc.searchBar.resignFirstResponder()
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let cell = cell as? AddProductCell {
+            cell.animatePresent()
+        }
     }
 }

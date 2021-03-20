@@ -41,6 +41,7 @@ final class ToastView: UIView {
         self.lottieView.loopMode = .playOnce
         self.lottieView.backgroundColor = .clear
         self.lottieView.contentMode = .scaleAspectFit
+        self.lottieView.animationSpeed = 1.5
 //        self.imageView.image = UIImage(systemName: "plus.circle.fill")?.with(color: Settings.Colors.blue)
     }
     

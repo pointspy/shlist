@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Shirt</string>
+    <string>Pants</string>
+    <string>Jacket</string>
+    <string>Socks</string>
+    <string>Underpants</string>
+    <string>T-shirt</string>
+    <string>Jacket</string>
+    <string>Hat</string>
+    <string>Scarf</string>
+    <string>Gloves</string>
+    <string>Pants</string>
+    <string>Tie</string>
+    <string>Suit</string>
+</array>
+</plist>
+

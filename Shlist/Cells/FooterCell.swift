@@ -30,11 +30,11 @@ final class FooterCell: UITableViewCell, NibReusable {
     
     public func set(sum: Double) {
         
-        let sumText: String = FooterCell.numberFormatter.string(from: NSNumber(floatLiteral: sum)) ?? "0.00"
+//        let sumText: String = FooterCell.numberFormatter.string(from: NSNumber(floatLiteral: sum)) ?? "0.00"
         
-        self.sumLabel.attributedText = "Сумма: ".at.attributed {
+        self.sumLabel.attributedText = "\(NSLocalizedString("common.sum", comment: "")): ".at.attributed {
             $0.font(Settings.Fonts.totalSumTitle).foreground(color: Settings.Colors.totalSumTitleColor)
-        } + "\(sumText)₽".at.attributed {
+        } + "\(sum.asPretty)\(NSLocalizedString("common.currency", comment: ""))".at.attributed {
             $0.font(Settings.Fonts.totalSumValue).foreground(color: Settings.Colors.totalSumValueColor)
         }
     }

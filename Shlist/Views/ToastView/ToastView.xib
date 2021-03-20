@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-3S-EOj">
-                    <rect key="frame" x="76" y="10" width="348" height="94"/>
+                    <rect key="frame" x="56" y="10" width="372" height="94"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="vrE-6q-i7t"/>
                     </constraints>
@@ -30,7 +30,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmd-xE-UuP" customClass="AnimationView" customModule="Lottie">
-                    <rect key="frame" x="12" y="29" width="56" height="56"/>
+                    <rect key="frame" x="0.0" y="29" width="56" height="56"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="Clo-tp-YsR"/>
@@ -47,9 +47,9 @@
                 <constraint firstItem="Pmd-xE-UuP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GWe-av-fjY"/>
                 <constraint firstAttribute="bottom" secondItem="6gO-3S-EOj" secondAttribute="bottom" constant="10" id="HQY-i2-i4k"/>
                 <constraint firstItem="6gO-3S-EOj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="UdW-RM-9wo"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6gO-3S-EOj" secondAttribute="trailing" constant="32" id="rVs-Cs-Rqa"/>
-                <constraint firstItem="Pmd-xE-UuP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="tcv-W9-hVb"/>
-                <constraint firstItem="6gO-3S-EOj" firstAttribute="leading" secondItem="Pmd-xE-UuP" secondAttribute="trailing" constant="8" id="xfg-Dl-j0U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6gO-3S-EOj" secondAttribute="trailing" constant="28" id="rVs-Cs-Rqa"/>
+                <constraint firstItem="Pmd-xE-UuP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tcv-W9-hVb"/>
+                <constraint firstItem="6gO-3S-EOj" firstAttribute="leading" secondItem="Pmd-xE-UuP" secondAttribute="trailing" id="xfg-Dl-j0U"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -57,9 +57,6 @@
             <point key="canvasLocation" x="168.11594202898553" y="389.0625"/>
         </view>
     </objects>
-    <designables>
-        <designable name="Pmd-xE-UuP"/>
-    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

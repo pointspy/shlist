@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Рыба</string>
+    <string>Анчоусы</string>
+    <string>Горбуша</string>
+    <string>Желтохвост (лакедра)</string>
+    <string>Камбала</string>
+    <string>Карп</string>
+    <string>Кета</string>
+    <string>Кижуч</string>
+    <string>Масляная рыба (эсколар)</string>
+    <string>Минтай</string>
+    <string>Налим</string>
+    <string>Окунь морской (красный)</string>
+    <string>Осётр</string>
+    <string>Палтус</string>
+    <string>Сардина</string>
+    <string>Сельдь</string>
+    <string>Сёмга</string>
+    <string>Сибас</string>
+    <string>Скумбрия</string>
+    <string>Ставрида</string>
+    <string>Судак</string>
+    <string>Терпуг</string>
+    <string>Тилапия</string>
+    <string>Треска</string>
+    <string>Тунец</string>
+    <string>Угорь</string>
+    <string>Форель</string>
+    <string>Чавыча</string>
+    <string>Щука</string>
+    <string>Икра красная или чёрная</string>
+    <string>Рыба</string>
+    <string>Кальмар</string>
+    <string>Мидии</string>
+    <string>Моллюски</string>
+    <string>Морской гребешок</string>
+    <string>Устрицы</string>
+    <string>Краб</string>
+    <string>Креветки</string>
+    <string>Лобстеры (омары, лангусты)</string>
+    <string>Раки</string>
+    <string>Водоросли нори</string>
+    <string>Морская капуста</string>
+</array>
+</plist>

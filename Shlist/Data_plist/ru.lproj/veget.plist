@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Соевые бобы</string>
+    <string>Соевый соус</string>
+    <string>Соевый сыр тофу</string>
+    <string>Дыня</string>
+    <string>Картофель 🥔</string>
+    <string>Картофельное пюре</string>
+    <string>Васаби</string>
+    <string>Дайкон</string>
+    <string>Корень имбиря</string>
+    <string>Корень цикория</string>
+    <string>Морковь 🥕</string>
+    <string>Редиска</string>
+    <string>Репа</string>
+    <string>Свекла</string>
+    <string>Лук репчатый</string>
+    <string>Лук-шалот</string>
+    <string>Чеснок 🧄</string>
+    <string>Баклажан 🍆</string>
+    <string>Перец болгарский</string>
+    <string>Перец чили красный острый</string>
+    <string>Помидоры 🍅</string>
+    <string>Физалис</string>
+    <string>Кабачок</string>
+    <string>Огурцы 🥒</string>
+    <string>Патиссон</string>
+    <string>Тыква</string>
+    <string>Арахис</string>
+    <string>Бобы</string>
+    <string>Бобы зелёные</string>
+    <string>Горох</string>
+    <string>Зелёный горошек</string>
+    <string>Нут</string>
+    <string>Фасоль белая</string>
+    <string>Фасоль красная (Кидни)</string>
+    <string>Фасоль стручковая</string>
+    <string>Фасоль чёрная</string>
+    <string>Чечевица</string>
+    <string>Брокколи 🥦</string>
+    <string>Брокколи китайская</string>
+    <string>Брюссельская капуста</string>
+    <string>Капуста</string>
+    <string>Капуста квашеная</string>
+    <string>Капуста красная</string>
+    <string>Капуста листовая</string>
+    <string>Капуста пекинская</string>
+    <string>Капуста савойская</string>
+    <string>Цветная капуста</string>
+    <string>Салат 🥬</string>
+    <string>Салат кочанный</string>
+    <string>Салат латук</string>
+    <string>Артишоки</string>
+    <string>Бамбуковые побеги</string>
+    <string>Кукуруза 🌽</string>
+    <string>Кукуруза</string>
+    <string>Сельдерей</string>
+    <string>Спаржа</string>
+    <string>Кинза (листья кориандра)</string>
+    <string>Лук зелёный</string>
+    <string>Лук-батун</string>
+    <string>Лук-порей 🧅</string>
+    <string>Петрушка</string>
+    <string>Руккола</string>
+    <string>Шпинат</string>
+    <string>Щавель</string>
+    <string>Перец чили острый 🌶</string>
+    <string>Экстракт имбиря</string>
+    <string>Лавровый лист</string>
+    <string>Абрикос</string>
+    <string>Айва</string>
+    <string>Апельсины 🍊</string>
+    <string>Арбуз 🍉</string>
+    <string>Бананы</string>
+    <string>Гранат</string>
+    <string>Грейпфрут</string>
+    <string>Груша 🍐</string>
+    <string>Дыня</string>
+    <string>Инжир</string>
+    <string>Киви 🥝</string>
+    <string>Лайм</string>
+    <string>Лимон 🍋</string>
+    <string>Мандарины</string>
+    <string>Маслины</string>
+    <string>Оливки зелёные</string>
+    <string>Персик 🍑</string>
+    <string>Слива</string>
+    <string>Хурма</string>
+    <string>Яблоки 🍏</string>
+    <string>Бузина</string>
+    <string>Виноград 🍇</string>
+    <string>Вишня 🍒</string>
+    <string>Голубика</string>
+    <string>Ежевика</string>
+    <string>Клубника 🍓</string>
+    <string>Клюква</string>
+    <string>Крыжовник</string>
+    <string>Малина</string>
+    <string>Смородина красная или белая</string>
+    <string>Смородина чёрная</string>
+    <string>Ягоды годжи</string>
+    <string>Авокадо</string>
+    <string>Ананас 🍍</string>
+    <string>Гуава</string>
+    <string>Дуриан</string>
+    <string>Манго</string>
+    <string>Маракуйя</string>
+    <string>Мушмула</string>
+    <string>Папайя</string>
+    <string>Помело</string>
+    <string>Фейхоа</string>
+    <string>Бананы 🍌</string>
+    <string>Изюм</string>
+    <string>Курага</string>
+    <string>Финики</string>
+    <string>Чернослив</string>
+    <string>Каркаде</string>
+    <string>Грибы</string>
+    <string>Гриб древесный</string>
+    <string>Грибы вешенки</string>
+    <string>Грибы лисички</string>
+    <string>Грибы майтаке</string>
+    <string>Шампиньоны</string>
+    <string>Кокосовая стружка</string>
+    <string>Мякоть кокоса</string>
+    <string>Арахис</string>
+    <string>Бразильский орех</string>
+    <string>Грецкий орех</string>
+    <string>Кедровый орех</string>
+    <string>Кешью</string>
+    <string>Миндаль</string>
+    <string>Орех макадамия</string>
+    <string>Пекан</string>
+    <string>Фисташки</string>
+    <string>Фундук</string>
+    <string>Кокос 🥥</string>
+</array>
+</plist>

@@ -26,7 +26,7 @@ extension UIViewController {
 
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("HomeViewcontroller.actionSheet.cancel", comment: ""), style: .cancel, handler: nil)
         
         let ok = UIAlertAction(title: okButtonTitle, style: .default, handler: {_ in
             successHandler()

@@ -91,7 +91,7 @@ public struct Product: Codable {
             return nil
         }
         
-        let clearText = text.replacingOccurrences(of: "₽", with: "")
+        let clearText = text.replacingOccurrences(of: "\(NSLocalizedString("common.currency", comment: ""))", with: "")
         
         return priceFormatter.number(from: clearText)?.doubleValue
     }
@@ -130,9 +130,9 @@ extension Product: MarkdownTaskCompletable {
         var result = checked ? "~~\(name)~~" : "\(name)"
         let tail: String
         if price > 0, count == 1 {
-            tail = "` \(getTextFrom(value: price))₽ `"
+            tail = "` \(getTextFrom(value: price))\(NSLocalizedString("common.currency", comment: "")) `"
         } else if price > 0, count > 0, count != 1.0 {
-            tail = "` \(getTextFrom(value: price))₽ x \(getTextFrom(value: count)) = \(getTextFrom(value: sum))₽ `"
+            tail = "` \(getTextFrom(value: price))\(NSLocalizedString("common.currency", comment: "")) x \(getTextFrom(value: count)) = \(getTextFrom(value: sum))\(NSLocalizedString("common.currency", comment: "")) `"
             
         } else if price == 0, count != 1.0 {
             tail = "` \(getTextFrom(value: count)) `"

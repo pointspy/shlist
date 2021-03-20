@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Oatmeal porridge</string>
+    <string>Buckwheat porridge</string>
+    <string>Pearl porridge</string>
+    <string>Wheat porridge</string>
+    <string>Corn starch</string>
+    <string>Buckwheat flour</string>
+    <string>Oat flour</string>
+    <string>Wheat flour</string>
+    <string>Rye flour</string>
+    <string>Rice flour</string>
+    <string>Oat bran</string>
+    <string>Wheat Bran</string>
+    <string>Rice bran</string>
+    <string>Noodles (pasta, pasta)</string>
+    <string>Noodles buckwheat (soba)</string>
+    <string>homemade noodles</string>
+    <string>Whole wheat noodles</string>
+    <string>Corn noodles</string>
+    <string>Rice noodles</string>
+    <string>Egg noodles</string>
+</array>
+</plist>

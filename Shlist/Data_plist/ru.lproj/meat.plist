@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <string>Мясо 🥩</string>
+    <string>Лягушачьи лапки</string>
+    <string>Свинина 🥩</string>
+    <string>Корейка свиная</string>
+    <string>Говядина</string>
+    <string>Телятина</string>
+    <string>Говяжий язык</string>
+    <string>Говяжья печень</string>
+    <string>Баранина</string>
+    <string>Крольчатина</string>
+    <string>Курица 🍗</string>
+    <string>Куриная грудка</string>
+    <string>Куриные ножки</string>
+    <string>Курица</string>
+    <string>Куриная печень</string>
+    <string>Куриные сердца</string>
+    <string>Бедро индейки (филе)</string>
+    <string>Голень индейки</string>
+    <string>Грудка индейки (филе)</string>
+    <string>Индейка</string>
+    <string>Печень индейки</string>
+    <string>Гусь</string>
+    <string>Утка (мясо утиное)</string>
+    <string>Фуа-гра</string>
+    <string>Жир свиной (сало свиное)</string>
+    <string>Сало свиное топлёное (смалец)</string>
+    <string>Кости на суп 🍖</string>
+    <string>Колбаса</string>
+    <string>Колбаса копченая</string>
+    <string>Колбаса сырокопченая</string>
+    <string>Колбаса вяленая</string>
+    <string>Хамон</string>
+    <string>Сосиски</string>
+    <string>Сардельки</string>
+    <string>Пельмени</string>
+    <string>Хинкали</string>
+    <string>Манты</string>
+    <string>Котлеты куриные</string>
+    <string>Котлеты мясные</string>
+    <string>Окорок</string>
+    <string>Буженина</string>
+    <string>Ребрышки</string>
+</array>
+</plist>

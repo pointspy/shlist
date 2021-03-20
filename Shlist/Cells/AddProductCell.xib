@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,32 +19,29 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMC-Du-RK4" customClass="CornerRoundingView" customModule="Shlist" customModuleProvider="target">
                         <rect key="frame" x="16" y="2" width="288" height="52"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-bS-xN3">
-                                <rect key="frame" x="12" y="14" width="264" height="24"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_icon" translatesAutoresizingMaskIntoConstraints="NO" id="EOG-TZ-Fop">
-                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="ajf-hq-jI7"/>
-                                            <constraint firstAttribute="width" constant="24" id="oVB-6K-fal"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSX-xd-nzA">
-                                        <rect key="frame" x="36" y="0.0" width="228" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_icon" translatesAutoresizingMaskIntoConstraints="NO" id="EOG-TZ-Fop">
+                                <rect key="frame" x="90" y="14" width="24" height="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="ajf-hq-jI7"/>
+                                    <constraint firstAttribute="width" constant="24" id="oVB-6K-fal"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSX-xd-nzA">
+                                <rect key="frame" x="122" y="15.5" width="44" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.30980392159999998" green="0.52156862749999999" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3NX-bS-xN3" firstAttribute="centerY" secondItem="iMC-Du-RK4" secondAttribute="centerY" id="2G7-Ev-QRd"/>
-                            <constraint firstItem="3NX-bS-xN3" firstAttribute="leading" secondItem="iMC-Du-RK4" secondAttribute="leading" constant="12" id="Axx-2p-tkA"/>
+                            <constraint firstItem="QSX-xd-nzA" firstAttribute="width" relation="lessThanOrEqual" secondItem="iMC-Du-RK4" secondAttribute="width" multiplier="0.8" id="375-WH-IFH"/>
+                            <constraint firstItem="QSX-xd-nzA" firstAttribute="centerY" secondItem="iMC-Du-RK4" secondAttribute="centerY" id="6q8-Jx-cDF"/>
+                            <constraint firstItem="QSX-xd-nzA" firstAttribute="leading" secondItem="EOG-TZ-Fop" secondAttribute="trailing" constant="8" id="CDt-rG-eAe"/>
+                            <constraint firstItem="EOG-TZ-Fop" firstAttribute="centerY" secondItem="iMC-Du-RK4" secondAttribute="centerY" id="MTr-X5-l14"/>
                             <constraint firstAttribute="height" constant="52" id="MWu-7D-MnP"/>
-                            <constraint firstAttribute="trailing" secondItem="3NX-bS-xN3" secondAttribute="trailing" constant="12" id="dzv-dg-Brg"/>
+                            <constraint firstItem="QSX-xd-nzA" firstAttribute="centerX" secondItem="iMC-Du-RK4" secondAttribute="centerX" id="oe7-tR-h82"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -63,9 +61,8 @@
                 <outlet property="backView" destination="iMC-Du-RK4" id="M1N-YL-GrO"/>
                 <outlet property="iconView" destination="EOG-TZ-Fop" id="yQj-WN-gNz"/>
                 <outlet property="nameLabel" destination="QSX-xd-nzA" id="jAP-Sc-pzb"/>
-                <outlet property="stackView" destination="3NX-bS-xN3" id="NMt-mh-Pzg"/>
             </connections>
-            <point key="canvasLocation" x="139" y="128"/>
+            <point key="canvasLocation" x="137.59999999999999" y="127.736131934033"/>
         </tableViewCell>
     </objects>
     <resources>

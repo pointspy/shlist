@@ -170,7 +170,7 @@ final class FilterListStateViewModelImpl: FilterListStateViewModel, FilterListSt
                 
                 SwiftEntryKit.display(entry: toast, using: ToastView.bottomFloatAttributes(keyboardHeight: keboardHeight))
                 
-                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400), execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(300), execute: {
                     toast.play()
                 })
                 

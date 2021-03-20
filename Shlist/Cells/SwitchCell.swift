@@ -69,6 +69,8 @@ final class SwitchCell: UITableViewCell, NibReusable {
             .drive(onNext: {theme in
                  self.backView.fh.enable(normalColor: theme.cellBackViewColor, highlightedColor: theme.cellBackViewColorHiglighted)
             }).disposed(by: disposeBag)
+        
+        nameLabel.text = NSLocalizedString("ResultsTableViewController.options.saveInDictionary", comment: "")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

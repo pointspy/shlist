@@ -37,20 +37,20 @@ final class MarkDownViewController: UIViewController {
     var originalMarkDown: String = ""
     
     @objc func shareAction() {
-        let sheet = UIAlertController(title: "Экспорт", message: "", preferredStyle: .actionSheet)
+        let sheet = UIAlertController(title: "\(NSLocalizedString("common.export", comment: ""))", message: "", preferredStyle: .actionSheet)
         
-        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "\(NSLocalizedString("HomeViewcontroller.actionSheet.cancel", comment: ""))", style: .cancel, handler: nil)
         
         sheet.addAction(cancelAction)
         
-        let copyAction = UIAlertAction(title: "Копировать", style: .default, handler: { [weak self] _ in
+        let copyAction = UIAlertAction(title: "\(NSLocalizedString("common.copy", comment: ""))", style: .default, handler: { [weak self] _ in
             guard let self = self else { return }
             UIPasteboard.general.string = self.originalMarkDown
         })
         
         sheet.addAction(copyAction)
         
-        let exportMdFileAction = UIAlertAction(title: "Поделиться файлом Markdown", style: .default, handler: { [weak self] _ in
+        let exportMdFileAction = UIAlertAction(title: "\(NSLocalizedString("markdown.export.file", comment: ""))", style: .default, handler: { [weak self] _ in
             guard let self = self else { return }
              
             var filesToShare = [Any]()
@@ -66,7 +66,7 @@ final class MarkDownViewController: UIViewController {
 
         })
         
-        let exportTextAction = UIAlertAction(title: "Поделиться текстом Markdown", style: .default, handler: { [weak self] _ in
+        let exportTextAction = UIAlertAction(title: "\(NSLocalizedString("markdown.export.text", comment: ""))", style: .default, handler: { [weak self] _ in
             guard let self = self else { return }
              
             var filesToShare = [Any]()
@@ -87,7 +87,7 @@ final class MarkDownViewController: UIViewController {
         sheet.addAction(exportMdFileAction)
         
         if #available(iOS 14, *) {
-            let exportPdfAction = UIAlertAction(title: "Поделиться PDF", style: .default, handler: { [weak self] _ in
+            let exportPdfAction = UIAlertAction(title: "\(NSLocalizedString("markdown.export.pdf", comment: ""))", style: .default, handler: { [weak self] _ in
                 guard let self = self, let webView = self.mdView.webView else { return }
             
                 let config = WKPDFConfiguration()
