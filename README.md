@@ -5,6 +5,8 @@
 
 Simple and user-friendly application for doing the shopping list.
 
+<a href="https://apps.apple.com/ru/app/shlist/id1551533470"> <img width="100" src="https://github.com/pointspy/shlist/blob/master/images/app_store.png"></img> </a>
+
 | Light                      | _                          | 
 | -------------------------- | -------------------------- |
 | ![](/images/image1.png)  | ![](/images/image2.png)  | 
